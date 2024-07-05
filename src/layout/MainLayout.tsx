@@ -1,13 +1,19 @@
-import { Box, Link } from "@chakra-ui/react";
+import { Box, Flex, Link } from "@chakra-ui/react";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
 export const MainLayout = ({ children }: { children: React.ReactElement }) => {
   return (
     <Box>
-      <Link as={NavLink} to="/">
-        Home
-      </Link>
+      <Flex p={4} bgColor="whiteAlpha.300" gap={6}>
+        <Link as={NavLink} to="/">
+          Home
+        </Link>
+        <Link as={NavLink} to="/create">
+          Create
+        </Link>
+      </Flex>
+
       {children}
     </Box>
   );

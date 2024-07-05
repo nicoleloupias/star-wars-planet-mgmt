@@ -1,7 +1,10 @@
 import { Planet } from "../services/types/Planet";
 
 export const getPlanetId = (url: Planet["url"]) => {
-  return url.slice(url.length - 2, url.length - 1);
+  const regex = /\/planets\/(\d+)\//;
+  const test = url.match(regex);
+  if (!test) return -1;
+  return test[1];
 };
 
 const DEFAULT_PLANET_COLOR = "gray.300";

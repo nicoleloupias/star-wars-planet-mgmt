@@ -1,5 +1,4 @@
-import axios from "axios";
-import { BASE_API_URL, axiosInstance } from ".";
+import { axiosInstance } from "./";
 
 export class Service {
   async getAll() {

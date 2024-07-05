@@ -6,6 +6,10 @@ export const theme = extendTheme({
     useSystemColorMode: false
   },
   styles: {
-    global: {}
+    global: {
+      "html,body": {
+        bgColor: "gray.900"
+      }
+    }
   }
 });

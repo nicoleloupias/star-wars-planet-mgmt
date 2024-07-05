@@ -1,7 +1,8 @@
 import { Outlet, createBrowserRouter } from "react-router-dom";
 import { Home } from "../views/Home";
-import { PlanetDetails } from "../views/PlanetDetails";
+import { PlanetDetails } from "../views/Planet/PlanetDetails";
 import { MainLayout } from "../layout/MainLayout";
+import { CreatePlanet } from "../views/Planet/CreatePlanet";
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +19,14 @@ export const router = createBrowserRouter([
     element: (
       <MainLayout>
         <PlanetDetails />
+      </MainLayout>
+    )
+  },
+  {
+    path: "/create",
+    element: (
+      <MainLayout>
+        <CreatePlanet />
       </MainLayout>
     )
   }

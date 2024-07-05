@@ -1,9 +1,9 @@
 import { Box, Center, Circle, Flex, Heading, Text } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
-import { usePlanetsStore } from "../../hooks/usePlanetsStore";
-import stars from "../../assets/stars.png";
+import { usePlanetsStore } from "../../../hooks/usePlanetsStore";
+import stars from "../../../assets/stars.png";
 import { useEffect } from "react";
-import { getRandomPlanetColor } from "../../helpers/planet";
+import { getRandomPlanetColor } from "../../../helpers/planet";
 
 export const PlanetDetails = () => {
   const { id } = useParams();
@@ -26,7 +26,9 @@ export const PlanetDetails = () => {
         <Text>Diameter: {data?.diameter}</Text>
         <Text>Climate: {data?.climate}</Text>
         <Text>Terrain: {data?.terrain}</Text>
+        {/* TODO: add residents lists */}
         <Text>Population: {data?.population}</Text>
+        <Text>Residents: </Text>
       </Box>
     </Flex>
   );
