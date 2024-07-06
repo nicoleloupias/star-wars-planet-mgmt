@@ -66,15 +66,16 @@ export const PlanetForm = ({ onSubmit, confirmText }: PlanetFormProps) => {
           required
         }}
       />
-      <Flex gap={2} pt={4}>
+      <Flex gap={3} pt={4}>
         <Button
+          variant="secondary"
           onClick={() => {
             navigate(-1);
           }}
         >
           Cancel
         </Button>
-        <Button type="submit" onClick={onSubmit} isDisabled={!formState.isValid}>
+        <Button variant="primary" type="submit" onClick={onSubmit} isDisabled={!formState.isValid}>
           {confirmText}
         </Button>
       </Flex>

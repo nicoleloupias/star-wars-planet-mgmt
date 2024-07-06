@@ -31,11 +31,11 @@ export const CreatePlanet = () => {
   };
 
   return (
-    <Center flexDir={"column"} pt={12}>
+    <Center flexDir={"column"} py={12}>
       <Container maxW="500px">
         <Heading mb={6}>Create planet</Heading>
         <FormProvider {...form}>
-          <PlanetForm onSubmit={form.handleSubmit(createPlanet)} confirmText="Create Planet" />
+          <PlanetForm onSubmit={form.handleSubmit(createPlanet)} confirmText="Create" />
         </FormProvider>
       </Container>
     </Center>

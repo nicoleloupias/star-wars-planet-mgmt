@@ -1,5 +1,5 @@
-import { Box, Center, Circle, Flex, Heading, Text } from "@chakra-ui/react";
-import { useParams } from "react-router-dom";
+import { Box, Button, Center, Circle, Flex, Heading, Text } from "@chakra-ui/react";
+import { Link, useParams } from "react-router-dom";
 import { usePlanetsStore } from "../../../hooks/usePlanetsStore";
 import stars from "../../../assets/stars.png";
 import { useEffect } from "react";
@@ -29,6 +29,10 @@ export const PlanetDetails = () => {
         {/* TODO: add residents lists */}
         <Text>Population: {data?.population}</Text>
         <Text>Residents: </Text>
+
+        <Button variant="primary" mt={6} to={`/${id}/edit`} as={Link}>
+          Edit
+        </Button>
       </Box>
     </Flex>
   );
