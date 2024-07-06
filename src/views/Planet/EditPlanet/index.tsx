@@ -7,8 +7,8 @@ import { useNavigate, useParams } from "react-router-dom";
 
 export const EditPlanet = () => {
   const { id } = useParams();
-  const data = usePlanetsStore((state) => state.getById(id!));
-  console.log(data);
+  const planets = usePlanetsStore((store) => store.planets);
+  const data = planets.find((planet) => planet.url.includes(`/${id}/`));
 
   const editPlanet = usePlanetsStore((state) => state.editPlanet);
   const form = useForm<PlanetFormFieldValues>({

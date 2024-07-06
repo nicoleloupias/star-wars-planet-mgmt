@@ -7,7 +7,9 @@ export const theme = extendTheme({
     useSystemColorMode: false
   },
   colors: {
-    red: "#FF1249"
+    red: {
+      500: "#FF1249"
+    }
   },
   components: {
     Button

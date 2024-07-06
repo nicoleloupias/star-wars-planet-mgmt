@@ -5,8 +5,9 @@ import { getPlanetId } from "../helpers/planet";
 interface PlanetStore {
   planets: Planet[];
   setPlanets: (planets: Planet[]) => void;
-  getById: (id: string) => Planet | undefined;
   editPlanet: (id: string, data: Planet) => void;
+  setPlanet: (id: string, data: Planet) => void;
+  removePlanet: (id: string) => void;
 }
 
 export const usePlanetsStore = create<PlanetStore>((set, get) => ({
@@ -16,6 +17,15 @@ export const usePlanetsStore = create<PlanetStore>((set, get) => ({
       return { ...state, planets: [...state.planets, ...planets] };
     });
   },
+  setPlanet: (id, data) => {
+    return set((state) => {
+      if (!state.planets.find((planet) => planet.url.includes(`/${id}/`))) {
+        return { ...state, planets: [data] };
+      }
+      return get().editPlanet(id, data);
+    });
+  },
+
   editPlanet: (id, data) => {
     return set((state) => {
       const planets = state.planets.map((planet) => {
@@ -29,5 +39,10 @@ export const usePlanetsStore = create<PlanetStore>((set, get) => ({
       return { ...state, planets: [...planets] };
     });
   },
-  getById: (id) => get().planets.find((planet) => planet.url.includes(`/${id}/`))
+
+  removePlanet: (id) => {
+    return set((state) => {
+      return { ...state, planets: state.planets.filter((planet) => !planet.url.includes(`/${id}/`)) };
+    });
+  }
 }));

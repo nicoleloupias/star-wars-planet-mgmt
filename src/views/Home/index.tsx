@@ -9,8 +9,9 @@ export const Home = () => {
   const setPlanets = usePlanetsStore((state) => state.setPlanets);
   const getAllPlanets = async () => {
     const planets = await PlanetService.getAll();
+    console.log(planets);
 
-    setPlanets(planets);
+    setPlanets(planets.results);
   };
 
   useEffect(() => {

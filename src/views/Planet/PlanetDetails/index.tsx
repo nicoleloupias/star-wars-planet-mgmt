@@ -1,19 +1,41 @@
-import { Box, Button, Center, Circle, Flex, Heading, Text } from "@chakra-ui/react";
-import { Link, useParams } from "react-router-dom";
+import { Box, Button, Center, Circle, Flex, Heading, Text, useToast } from "@chakra-ui/react";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { usePlanetsStore } from "../../../hooks/usePlanetsStore";
 import stars from "../../../assets/stars.png";
 import { useEffect } from "react";
 import { getRandomPlanetColor } from "../../../helpers/planet";
+import { PlanetService } from "../../../services/PlanetService";
 
 export const PlanetDetails = () => {
   const { id } = useParams();
-  const data = usePlanetsStore((store) => store.getById)(id || "1");
+  const planets = usePlanetsStore((store) => store.planets);
+  const data = planets.find((planet) => planet.url.includes(`/${id}/`));
+  const setPlanet = usePlanetsStore((store) => store.setPlanet);
+  const removePlanet = usePlanetsStore((store) => store.removePlanet);
   const planetColor = getRandomPlanetColor(data?.name);
+  const navigate = useNavigate();
+  const toast = useToast();
 
-  const getPlanetDetails = () => {};
+  const getPlanetDetails = async () => {
+    const planet = await PlanetService.getById(id!);
+    setPlanet(id!, planet);
+  };
+
+  const handleRemovePlanet = () => {
+    const name = data?.name;
+    removePlanet(id!);
+    navigate("/");
+    toast({
+      status: "success",
+      title: `Success! Planet ${name} was removed from our system.`,
+      position: "top-right"
+    });
+  };
 
   useEffect(() => {
-    getPlanetDetails();
+    if (!data) {
+      getPlanetDetails();
+    }
   }, []);
 
   return (
@@ -30,9 +52,14 @@ export const PlanetDetails = () => {
         <Text>Population: {data?.population}</Text>
         <Text>Residents: </Text>
 
-        <Button variant="primary" mt={6} to={`/${id}/edit`} as={Link}>
-          Edit
-        </Button>
+        <Flex mt={6} gap={4}>
+          <Button variant="primary" to={`/${id}/edit`} as={Link}>
+            Edit
+          </Button>
+          <Button variant="primary" onClick={handleRemovePlanet}>
+            Remove
+          </Button>
+        </Flex>
       </Box>
     </Flex>
   );

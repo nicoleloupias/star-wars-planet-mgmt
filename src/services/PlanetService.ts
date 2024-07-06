@@ -9,6 +9,15 @@ export class Service {
       console.error(error);
     }
   }
+
+  async getById(planetId: string) {
+    try {
+      const response = await axiosInstance.get(`/planets/${planetId}`);
+      return response.data;
+    } catch (error) {
+      console.error(error);
+    }
+  }
 }
 
 export const PlanetService = new Service();
