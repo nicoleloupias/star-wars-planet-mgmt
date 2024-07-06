@@ -1,29 +1,29 @@
-import { Box, Button, Center, Circle, Flex, Heading, Text, useToast } from "@chakra-ui/react";
+import { Box, Button, Center, Circle, Flex, Heading, ListItem, OrderedList, Text, useToast } from "@chakra-ui/react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { usePlanetsStore } from "../../../hooks/usePlanetsStore";
 import stars from "../../../assets/stars.png";
 import { useEffect } from "react";
 import { getRandomPlanetColor } from "../../../helpers/planet";
-import { PlanetService } from "../../../services/PlanetService";
+import { DeleteIcon, EditIcon } from "@chakra-ui/icons";
+import { ResidentService } from "../../../services/ResidentService";
+import { useResidentsStore } from "../../../hooks/useResidentsStore";
 
 export const PlanetDetails = () => {
-  const { id } = useParams();
+  const { id } = useParams() as { id: string };
   const planets = usePlanetsStore((store) => store.planets);
-  const data = planets.find((planet) => planet.url.includes(`/${id}/`));
-  const setPlanet = usePlanetsStore((store) => store.setPlanet);
+
+  const data = planets?.find((planet) => planet.id === id);
+
   const removePlanet = usePlanetsStore((store) => store.removePlanet);
+  const setResident = useResidentsStore((store) => store.setResident);
+  const residents = useResidentsStore((store) => store.residents)[id];
   const planetColor = getRandomPlanetColor(data?.name);
   const navigate = useNavigate();
   const toast = useToast();
 
-  const getPlanetDetails = async () => {
-    const planet = await PlanetService.getById(id!);
-    setPlanet(id!, planet);
-  };
-
   const handleRemovePlanet = () => {
     const name = data?.name;
-    removePlanet(id!);
+    removePlanet(id);
     navigate("/");
     toast({
       status: "success",
@@ -32,34 +32,69 @@ export const PlanetDetails = () => {
     });
   };
 
+  const getResidentId = (url: string) => {
+    const regex = /\/people\/(\d+)\//;
+    const test = url.match(regex);
+    if (!test) return "-1";
+    return test[1];
+  };
+
+  const getAllResidents = () => {
+    data?.residents.forEach(async (residentUrl) => {
+      const residentId = getResidentId(residentUrl);
+      const resident = await ResidentService.getById(residentId);
+
+      setResident(id, resident);
+    });
+  };
+
   useEffect(() => {
-    if (!data) {
-      getPlanetDetails();
+    if (!residents) {
+      getAllResidents();
     }
-  }, []);
+  }, [data]);
 
   return (
-    <Flex w="full" minH="100vh">
-      <Center bgImage={`url(${stars})`} bgSize="200px" w="full">
-        <Circle size={60} bgColor={planetColor} boxShadow={`0px 0px 30px 0px ${planetColor}`} />
+    <Flex w="full" minH="100vh" flexDirection={{ base: "column", lg: "row" }} pt={14}>
+      <Center bgImage={`url(${stars})`} bgSize="200px" w="full" flex={2 / 3} py={12}>
+        <Circle
+          size={{ base: "200px", lg: "400px" }}
+          bgColor={planetColor}
+          boxShadow={`0px 0px 30px 0px ${planetColor}`}
+        />
       </Center>
-      <Box w="full" bg="gray.700" p={8}>
-        <Heading color="gray.50">{data?.name}</Heading>
-        <Text>Diameter: {data?.diameter}</Text>
-        <Text>Climate: {data?.climate}</Text>
-        <Text>Terrain: {data?.terrain}</Text>
-        {/* TODO: add residents lists */}
-        <Text>Population: {data?.population}</Text>
-        <Text>Residents: </Text>
+      <Box w="full" flex={1 / 3}>
+        <Box bgColor="red.500" p={6} mb={6}>
+          <Heading color="gray.50">Planet: {data?.name}</Heading>
+        </Box>
+        <Box ml={6}>
+          <Text>Diameter: {data?.diameter}</Text>
+          <Text>Climate: {data?.climate}</Text>
+          <Text>Terrain: {data?.terrain}</Text>
+          <Text>Population: {data?.population}</Text>
 
-        <Flex mt={6} gap={4}>
-          <Button variant="primary" to={`/${id}/edit`} as={Link}>
-            Edit
-          </Button>
-          <Button variant="primary" onClick={handleRemovePlanet}>
-            Remove
-          </Button>
-        </Flex>
+          <Box mt={4}>
+            <Heading as="h3" fontSize="xl">
+              Residents
+            </Heading>
+            {residents?.length > 0 ? (
+              <OrderedList>
+                {residents?.map((resident) => <ListItem key={resident.name}>{resident.name}</ListItem>)}
+              </OrderedList>
+            ) : (
+              <Text>There are no residents in this planet.</Text>
+            )}
+          </Box>
+
+          <Flex mt={6} gap={4}>
+            <Button variant="secondary" to={`/${id}/edit`} as={Link} rightIcon={<EditIcon />}>
+              Edit
+            </Button>
+            <Button variant="secondary" onClick={handleRemovePlanet} rightIcon={<DeleteIcon />}>
+              Remove
+            </Button>
+          </Flex>
+        </Box>
       </Box>
     </Flex>
   );

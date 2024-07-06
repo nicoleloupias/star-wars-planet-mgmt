@@ -1,14 +1,14 @@
 import { PlanetForm, PlanetFormFieldValues } from "../PlanetForm";
 import { FormProvider, useForm } from "react-hook-form";
 import { Center, Container, Heading, useToast } from "@chakra-ui/react";
-import { usePlanetsStore } from "../../../hooks/usePlanetsStore";
-import { Planet } from "../../../services/types/Planet";
+import { Planet, usePlanetsStore } from "../../../hooks/usePlanetsStore";
 import { useNavigate, useParams } from "react-router-dom";
 
 export const EditPlanet = () => {
-  const { id } = useParams();
+  const { id } = useParams() as { id: string };
+
   const planets = usePlanetsStore((store) => store.planets);
-  const data = planets.find((planet) => planet.url.includes(`/${id}/`));
+  const data = planets?.find((planet) => planet.id === id);
 
   const editPlanet = usePlanetsStore((state) => state.editPlanet);
   const form = useForm<PlanetFormFieldValues>({
@@ -25,15 +25,18 @@ export const EditPlanet = () => {
   const toast = useToast();
 
   const handleEditPlanet = (values: PlanetFormFieldValues) => {
+    if (!data) return;
     const body: Planet = {
       name: values.name,
       diameter: values.diameter.toString(),
       population: values.population.toString(),
       climate: values.climate,
       terrain: values.terrain,
-      url: data?.url!
+      id: data.id,
+      url: data.url,
+      residents: data.residents
     };
-    editPlanet(id!, body);
+    editPlanet(id, body);
     navigate(`/${id}`);
     toast({
       status: "success",

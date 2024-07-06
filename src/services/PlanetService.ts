@@ -1,19 +1,13 @@
 import { axiosInstance } from "./";
 
-export class Service {
+class Service {
   async getAll() {
     try {
-      const response = await axiosInstance.get("/planets/");
-      return response.data;
-    } catch (error) {
-      console.error(error);
-    }
-  }
-
-  async getById(planetId: string) {
-    try {
-      const response = await axiosInstance.get(`/planets/${planetId}`);
-      return response.data;
+      const response = await Promise.all(
+        Array.from(Array(6)).map((_, i) => axiosInstance.get(`/planets/?page=${i + 1}`))
+      );
+      const data = response.flatMap(({ data }) => data.results);
+      return data;
     } catch (error) {
       console.error(error);
     }
