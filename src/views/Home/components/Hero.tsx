@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Img, Text } from "@chakra-ui/react";
-import darth from "../../assets/Darth-Vader-PNG-HD-Image.png";
+import darth from "../../../assets/Darth-Vader-PNG-HD-Image.png";
 
 export const Hero = () => {
   return (

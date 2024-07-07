@@ -1,8 +1,8 @@
 import { Box, Card, Center, Circle, FlexProps, Heading, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import stars from "../assets/stars.png";
-import { getRandomPlanetColor } from "../helpers/planet";
-import { Planet } from "../hooks/usePlanetsStore";
+import stars from "../../../assets/stars.png";
+import { getRandomPlanetColor } from "../../../helpers/planet";
+import { Planet } from "../../../hooks/usePlanetsStore";
 
 export interface PlanetCardProps extends Omit<FlexProps, "id">, Planet {}
 

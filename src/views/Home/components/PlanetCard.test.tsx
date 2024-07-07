@@ -1,11 +1,8 @@
-import { afterEach, describe, expect, test } from "vitest";
-import { render } from "../../test-utils";
-import { cleanup } from "@testing-library/react";
-import { PlanetCard, PlanetCardProps } from "../PlanetCard";
+import { describe, expect, test } from "vitest";
+import { render } from "../../../test-utils";
+import { PlanetCard, PlanetCardProps } from "./PlanetCard";
 
 describe("<PlanetCard/>", () => {
-  afterEach(cleanup);
-
   const defaultProps = {
     id: "12",
     name: "Utapau",

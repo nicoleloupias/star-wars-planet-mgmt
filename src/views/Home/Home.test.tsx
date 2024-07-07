@@ -1,11 +1,9 @@
-import { afterEach, beforeAll, describe, expect, test } from "vitest";
-import { Home } from "..";
-import { render } from "../../../test-utils";
-import { usePlanetsStore } from "../../../hooks/usePlanetsStore";
-import { cleanup } from "@testing-library/react";
+import { beforeAll, describe, expect, test } from "vitest";
+import { Home } from "./Home";
+import { render } from "../../test-utils";
+import { usePlanetsStore } from "../../hooks/usePlanetsStore";
 
 describe("<Home/>", () => {
-  afterEach(cleanup);
   beforeAll(() => {
     usePlanetsStore.setState(
       {

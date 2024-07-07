@@ -12,6 +12,7 @@ function App() {
 
   const getAllPlanets = async () => {
     const planets = await PlanetService.getAll();
+
     setPlanets(planets);
   };
 
@@ -21,11 +22,7 @@ function App() {
     }
   }, []);
 
-  return (
-    <ChakraProvider theme={theme}>
-      <RouterProvider router={router} />
-    </ChakraProvider>
-  );
+  return <ChakraProvider theme={theme}>{/* <RouterProvider router={router} /> */}</ChakraProvider>;
 }
 
 export default App;

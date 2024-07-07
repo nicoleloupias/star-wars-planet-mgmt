@@ -1,12 +1,8 @@
-import { afterEach, describe, expect, test } from "vitest";
-import { Home } from "..";
+import { describe, expect, test } from "vitest";
 import { render } from "../../../test-utils";
-import { cleanup } from "@testing-library/react";
-import { Hero } from "../Hero";
+import { Hero } from "./Hero";
 
 describe("<Hero/>", () => {
-  afterEach(cleanup);
-
   test("should render succesfully", () => {
     const component = render(<Hero />);
 

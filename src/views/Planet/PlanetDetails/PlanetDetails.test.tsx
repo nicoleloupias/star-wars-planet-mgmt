@@ -1,17 +1,15 @@
-import { afterEach, beforeEach, describe, expect, test } from "vitest";
-import { render } from "../../../../test-utils";
-import { cleanup, fireEvent, waitFor } from "@testing-library/react";
-import { PlanetDetails } from "..";
-import { usePlanetsStore } from "../../../../hooks/usePlanetsStore";
+import { beforeEach, describe, expect, test } from "vitest";
+import { render } from "../../../test-utils";
+import { fireEvent, waitFor } from "@testing-library/react";
+import { PlanetDetails } from "./PlanetDetails";
+import { usePlanetsStore } from "../../../hooks/usePlanetsStore";
 import { MemoryHistory, createMemoryHistory } from "history";
 import { Route, Routes } from "react-router-dom";
 import axios from "axios";
 import { vi } from "vitest";
-import { useResidentsStore } from "../../../../hooks/useResidentsStore";
+import { useResidentsStore } from "../../../hooks/useResidentsStore";
 
 describe("<PlanetDetails />", () => {
-  afterEach(cleanup);
-
   const planetData = {
     id: "11",
     name: "Geonosis",
@@ -44,14 +42,6 @@ describe("<PlanetDetails />", () => {
       true
     );
     useResidentsStore.setState((state) => ({ ...state, residents: {} }), true);
-
-    vi.spyOn(axios, "get").mockImplementation(() => {
-      return Promise.resolve({
-        data: {
-          name: "Poggle the Lesser"
-        }
-      });
-    });
   });
 
   const factoryComponent = () =>

@@ -36,6 +36,7 @@ export const EditPlanet = () => {
       url: data.url,
       residents: data.residents
     };
+
     editPlanet(id, body);
     navigate(`/${id}`);
     toast({

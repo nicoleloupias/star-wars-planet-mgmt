@@ -1,0 +1,228 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<PlanetCard/> > should render succesfully 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body
+    class="chakra-ui-dark"
+  >
+    <div>
+      <a
+        class="chakra-card css-1olgpje"
+        created="2014-12-10T12:49:01.491000Z"
+        data-testid="planet-card"
+        edited="2014-12-20T20:58:18.439000Z"
+        films="https://swapi.dev/api/films/6/"
+        gravity="1 standard"
+        href="/12"
+        orbital_period="351"
+        residents="https://swapi.dev/api/people/83/"
+        rotation_period="27"
+        surface_water="0.9"
+      >
+        <div
+          class="css-upfzb1"
+        >
+          <div
+            class="planet css-1mm42zb"
+          />
+        </div>
+        <div
+          class="cardDetails css-vk61ae"
+        >
+          <h2
+            class="chakra-heading css-q8veze"
+          >
+            Utapau
+          </h2>
+          <p
+            class="chakra-text css-0"
+          >
+            Diameter: 
+            12900
+          </p>
+          <p
+            class="chakra-text css-0"
+          >
+            Climate: 
+            temperate, arid, windy
+          </p>
+          <p
+            class="chakra-text css-0"
+          >
+            Terrain: 
+            scrublands, savanna, canyons, sinkholes
+          </p>
+          <p
+            class="chakra-text css-0"
+          >
+            Population: 
+            95000000
+          </p>
+        </div>
+      </a>
+      <span
+        hidden=""
+        id="__chakra_env"
+      />
+    </div>
+    <div
+      class="chakra-portal"
+    >
+      <div
+        aria-label="Notifications-top"
+        aria-live="polite"
+        id="chakra-toast-manager-top"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+      />
+      <div
+        aria-label="Notifications-top-left"
+        aria-live="polite"
+        id="chakra-toast-manager-top-left"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <div
+        aria-label="Notifications-top-right"
+        aria-live="polite"
+        id="chakra-toast-manager-top-right"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <div
+        aria-label="Notifications-bottom-left"
+        aria-live="polite"
+        id="chakra-toast-manager-bottom-left"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <div
+        aria-label="Notifications-bottom"
+        aria-live="polite"
+        id="chakra-toast-manager-bottom"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+      />
+      <div
+        aria-label="Notifications-bottom-right"
+        aria-live="polite"
+        id="chakra-toast-manager-bottom-right"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"
+      />
+    </div>
+  </body>,
+  "container": <div>
+    <a
+      class="chakra-card css-1olgpje"
+      created="2014-12-10T12:49:01.491000Z"
+      data-testid="planet-card"
+      edited="2014-12-20T20:58:18.439000Z"
+      films="https://swapi.dev/api/films/6/"
+      gravity="1 standard"
+      href="/12"
+      orbital_period="351"
+      residents="https://swapi.dev/api/people/83/"
+      rotation_period="27"
+      surface_water="0.9"
+    >
+      <div
+        class="css-upfzb1"
+      >
+        <div
+          class="planet css-1mm42zb"
+        />
+      </div>
+      <div
+        class="cardDetails css-vk61ae"
+      >
+        <h2
+          class="chakra-heading css-q8veze"
+        >
+          Utapau
+        </h2>
+        <p
+          class="chakra-text css-0"
+        >
+          Diameter: 
+          12900
+        </p>
+        <p
+          class="chakra-text css-0"
+        >
+          Climate: 
+          temperate, arid, windy
+        </p>
+        <p
+          class="chakra-text css-0"
+        >
+          Terrain: 
+          scrublands, savanna, canyons, sinkholes
+        </p>
+        <p
+          class="chakra-text css-0"
+        >
+          Population: 
+          95000000
+        </p>
+      </div>
+    </a>
+    <span
+      hidden=""
+      id="__chakra_env"
+    />
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

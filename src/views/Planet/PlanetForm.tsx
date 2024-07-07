@@ -12,7 +12,7 @@ export interface PlanetFormFieldValues {
   terrain: string;
 }
 
-interface PlanetFormProps {
+export interface PlanetFormProps {
   onSubmit: () => void;
   confirmText: string;
 }

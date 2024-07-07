@@ -1,7 +1,7 @@
 import { Center, SimpleGrid } from "@chakra-ui/react";
-import { PlanetCard } from "../../components/PlanetCard";
+import { PlanetCard } from "./components/PlanetCard";
 import { usePlanetsStore } from "../../hooks/usePlanetsStore";
-import { Hero } from "./Hero";
+import { Hero } from "./components/Hero";
 
 export const Home = () => {
   const planets = usePlanetsStore((state) => state.planets);

@@ -1,13 +1,11 @@
-import { afterEach, describe, expect, test, vi } from "vitest";
+import { describe, expect, test, vi } from "vitest";
 import { render } from "../../test-utils";
-import { act, cleanup, fireEvent, waitFor } from "@testing-library/react";
+import { act, fireEvent, waitFor } from "@testing-library/react";
 import { InputController, InputControllerProps } from "../InputController";
 import { FieldValues, UseFormReturn, useForm } from "react-hook-form";
-import userEvent from "@testing-library/user-event";
 type DefaultProps = Omit<InputControllerProps<FieldValues>, "control">;
 
 describe("<InputController/>", () => {
-  afterEach(cleanup);
   const defaultProps: DefaultProps = {
     placeholder: "Name",
     rules: { required: "This field is required" },
