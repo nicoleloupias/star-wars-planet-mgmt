@@ -15,8 +15,8 @@ export const EditPlanet = () => {
     mode: "all",
     defaultValues: {
       name: data?.name,
-      diameter: data && parseInt(data.diameter!),
-      population: data && parseInt(data.population!),
+      diameter: data?.diameter !== "unknown" ? parseInt(data?.diameter!) : undefined,
+      population: data?.population !== "unknown" ? parseInt(data?.population!) : undefined,
       climate: data?.climate,
       terrain: data?.terrain
     }
@@ -28,8 +28,8 @@ export const EditPlanet = () => {
     if (!data) return;
     const body: Planet = {
       name: values.name,
-      diameter: values.diameter.toString(),
-      population: values.population.toString(),
+      diameter: values?.diameter ? values?.diameter.toString() : "unknown",
+      population: values?.population ? values?.population.toString() : "unknown",
       climate: values.climate,
       terrain: values.terrain,
       id: data.id,

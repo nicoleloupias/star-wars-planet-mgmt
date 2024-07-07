@@ -32,24 +32,8 @@ export const PlanetForm = ({ onSubmit, confirmText }: PlanetFormProps) => {
           maxLength: maxLength(100)
         }}
       />
-      <InputController
-        id="diameter"
-        type="number"
-        label="Diameter"
-        control={control}
-        rules={{
-          required
-        }}
-      />
-      <InputController
-        id="population"
-        type="number"
-        label="Population"
-        control={control}
-        rules={{
-          required
-        }}
-      />
+      <InputController id="diameter" type="number" label="Diameter" control={control} />
+      <InputController id="population" type="number" label="Population" control={control} />
       <InputController
         id="climate"
         label="Climate"

@@ -11,15 +11,13 @@ import { useResidentsStore } from "../../../hooks/useResidentsStore";
 export const PlanetDetails = () => {
   const { id } = useParams() as { id: string };
   const planets = usePlanetsStore((store) => store.planets);
-
   const data = planets?.find((planet) => planet.id === id);
-
   const removePlanet = usePlanetsStore((store) => store.removePlanet);
   const setResident = useResidentsStore((store) => store.setResident);
-  const residents = useResidentsStore((store) => store.residents)[id];
-  const planetColor = getRandomPlanetColor(data?.name);
+  const residents = useResidentsStore((store) => store.residents)?.[id];
   const navigate = useNavigate();
   const toast = useToast();
+  const planetColor = getRandomPlanetColor(data?.name);
 
   const handleRemovePlanet = () => {
     const name = data?.name;
@@ -77,10 +75,9 @@ export const PlanetDetails = () => {
             <Heading as="h3" fontSize="xl">
               Residents
             </Heading>
+
             {residents?.length > 0 ? (
-              <OrderedList>
-                {residents?.map((resident) => <ListItem key={resident.name}>{resident.name}</ListItem>)}
-              </OrderedList>
+              <OrderedList>{residents?.map(({ name }, i) => <ListItem key={i}>{name}</ListItem>)}</OrderedList>
             ) : (
               <Text>There are no residents in this planet.</Text>
             )}
@@ -90,7 +87,12 @@ export const PlanetDetails = () => {
             <Button variant="secondary" to={`/${id}/edit`} as={Link} rightIcon={<EditIcon />}>
               Edit
             </Button>
-            <Button variant="secondary" onClick={handleRemovePlanet} rightIcon={<DeleteIcon />}>
+            <Button
+              variant="secondary"
+              data-testid="remove-planet-btn"
+              onClick={handleRemovePlanet}
+              rightIcon={<DeleteIcon />}
+            >
               Remove
             </Button>
           </Flex>

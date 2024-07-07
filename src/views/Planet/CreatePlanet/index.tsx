@@ -2,7 +2,6 @@ import { PlanetForm, PlanetFormFieldValues } from "../PlanetForm";
 import { FormProvider, useForm } from "react-hook-form";
 import { Center, Container, Heading, useToast } from "@chakra-ui/react";
 import { Planet, usePlanetsStore } from "../../../hooks/usePlanetsStore";
-import { v4 as uuidv4 } from "uuid";
 import { useNavigate } from "react-router-dom";
 
 export const CreatePlanet = () => {
@@ -19,8 +18,8 @@ export const CreatePlanet = () => {
     const generatedId = randomIntFromInterval(40, 100).toString();
     const body: Planet = {
       name: values.name,
-      diameter: values.diameter.toString(),
-      population: values.population.toString(),
+      diameter: values?.diameter ? values?.diameter.toString() : "unknown",
+      population: values?.population ? values?.population.toString() : "unknown",
       climate: values.climate,
       terrain: values.terrain,
       id: generatedId,
@@ -31,7 +30,7 @@ export const CreatePlanet = () => {
     navigate("/");
     toast({
       status: "success",
-      title: "Success! A planet was added to our system.",
+      title: `Success! Planet ${values.name} was added to our system.`,
       position: "top-right"
     });
   };

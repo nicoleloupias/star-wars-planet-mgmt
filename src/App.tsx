@@ -23,7 +23,7 @@ function App() {
 
   return (
     <ChakraProvider theme={theme}>
-      <RouterProvider router={router}></RouterProvider>
+      <RouterProvider router={router} />
     </ChakraProvider>
   );
 }

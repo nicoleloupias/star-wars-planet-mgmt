@@ -4,7 +4,7 @@ import stars from "../assets/stars.png";
 import { getRandomPlanetColor } from "../helpers/planet";
 import { Planet } from "../hooks/usePlanetsStore";
 
-interface PlanetCardProps extends Omit<FlexProps, "id">, Planet {}
+export interface PlanetCardProps extends Omit<FlexProps, "id">, Planet {}
 
 export const PlanetCard = ({ id, name, diameter, climate, terrain, population, url, ...props }: PlanetCardProps) => {
   const planetColor = getRandomPlanetColor(name);
@@ -29,6 +29,7 @@ export const PlanetCard = ({ id, name, diameter, climate, terrain, population, u
       }}
       borderWidth="1px"
       borderColor={"rgba(255, 18, 73, 0.2)"}
+      data-testid="planet-card"
       {...props}
     >
       <Center overflow="hidden" h="224px" bgImage={`url(${stars})`} bgSize="200px">
