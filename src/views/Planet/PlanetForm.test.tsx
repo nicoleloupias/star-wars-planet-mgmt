@@ -1,7 +1,9 @@
 import { describe, expect, test, vi } from "vitest";
 import { render } from "../../test-utils";
-import { RenderResult, act, fireEvent, waitFor } from "@testing-library/react";
-import { PlanetForm, PlanetFormProps } from "./PlanetForm";
+import type { RenderResult } from "@testing-library/react";
+import { act, fireEvent, waitFor } from "@testing-library/react";
+import type { PlanetFormProps } from "./PlanetForm";
+import { PlanetForm } from "./PlanetForm";
 import { FormProvider, useForm } from "react-hook-form";
 
 describe("<PlanetForm/>", () => {
@@ -28,7 +30,7 @@ describe("<PlanetForm/>", () => {
       fireEvent.change(component.getByRole("textbox", { name: "Climate" }), { target: { value: "Hot" } });
       fireEvent.change(component.getByRole("spinbutton", { name: "Population" }), { target: { value: "1000" } });
       fireEvent.change(component.getByRole("textbox", { name: "Terrain" }), { target: { value: "Terrain" } });
-      fireEvent.change(component.getByRole("spinbutton", { name: "Diameter" }), { target: { value: "150" } });
+      fireEvent.change(component.getByRole("spinbutton", { name: "Diameter (km)" }), { target: { value: "150" } });
     });
   };
 
@@ -45,7 +47,7 @@ describe("<PlanetForm/>", () => {
     expect(component.getByRole("textbox", { name: "Climate" })).toBeInTheDocument();
     expect(component.getByRole("spinbutton", { name: "Population" })).toBeInTheDocument();
     expect(component.getByRole("textbox", { name: "Terrain" })).toBeInTheDocument();
-    expect(component.getByRole("spinbutton", { name: "Diameter" })).toBeInTheDocument();
+    expect(component.getByRole("spinbutton", { name: "Diameter (km)" })).toBeInTheDocument();
   });
 
   test("confirm btn should be disabled until form is filled correctly", async () => {

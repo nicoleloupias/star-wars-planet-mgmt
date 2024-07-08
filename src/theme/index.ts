@@ -2,6 +2,7 @@ import { extendTheme } from "@chakra-ui/react";
 import { Button } from "./components/Button";
 import { Input } from "./components/Input";
 import "@fontsource-variable/outfit";
+import { Select } from "./components/Select";
 
 export const theme = extendTheme({
   config: {
@@ -15,7 +16,8 @@ export const theme = extendTheme({
   },
   components: {
     Button,
-    Input
+    Input,
+    Select
   },
   fonts: {
     body: "'Outfit Variable', sans-serif",

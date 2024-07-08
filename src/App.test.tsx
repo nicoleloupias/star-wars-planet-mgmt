@@ -1,7 +1,6 @@
-import { beforeEach, describe, expect, test, vi } from "vitest";
+import { describe, expect, test } from "vitest";
 import App from "./App";
-import { render, waitFor } from "@testing-library/react";
-import { usePlanetsStore } from "./hooks/usePlanetsStore";
+import { render } from "@testing-library/react";
 
 describe("<App/>", () => {
   test("should render succesfully", () => {

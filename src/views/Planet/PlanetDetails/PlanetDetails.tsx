@@ -50,6 +50,7 @@ export const PlanetDetails = () => {
     if (!residents) {
       getAllResidents();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
 
   return (
@@ -66,7 +67,7 @@ export const PlanetDetails = () => {
           <Heading color="gray.50">Planet: {data?.name}</Heading>
         </Box>
         <Box ml={6}>
-          <Text>Diameter: {data?.diameter}</Text>
+          <Text>Diameter: {data?.diameter}km</Text>
           <Text>Climate: {data?.climate}</Text>
           <Text>Terrain: {data?.terrain}</Text>
           <Text>Population: {data?.population}</Text>

@@ -1,5 +1,5 @@
 import { axiosInstance } from "./";
-import { RawPlanet } from "./types/Planet";
+import type { RawPlanet } from "./types/Planet";
 
 class Service {
   async getAll(): Promise<RawPlanet[] | undefined> {

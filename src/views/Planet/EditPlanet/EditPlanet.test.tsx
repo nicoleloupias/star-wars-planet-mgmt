@@ -1,9 +1,10 @@
 import { beforeAll, beforeEach, describe, expect, test } from "vitest";
 import { render } from "../../../test-utils";
-import { act, cleanup, fireEvent, waitFor } from "@testing-library/react";
+import { act, fireEvent, waitFor } from "@testing-library/react";
 import { EditPlanet } from "./EditPlanet";
 import { usePlanetsStore } from "../../../hooks/usePlanetsStore";
-import { MemoryHistory, createMemoryHistory } from "history";
+import type { MemoryHistory } from "history";
+import { createMemoryHistory } from "history";
 import { Route, Routes } from "react-router-dom";
 
 describe("<EditPlanet/>", () => {
@@ -93,7 +94,7 @@ describe("<EditPlanet/>", () => {
     const component = factoryComponent();
 
     act(() => {
-      fireEvent.change(component.getByRole("spinbutton", { name: "Diameter" }), { target: { value: "" } });
+      fireEvent.change(component.getByRole("spinbutton", { name: "Diameter (km)" }), { target: { value: "" } });
       fireEvent.change(component.getByRole("spinbutton", { name: "Population" }), { target: { value: "" } });
     });
 

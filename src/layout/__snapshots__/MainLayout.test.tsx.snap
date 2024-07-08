@@ -10,7 +10,7 @@ exports[`<MainLayout/> > should render succesfully 1`] = `
       <div
         class="css-0"
       >
-        <div
+        <nav
           class="css-lhoiow"
         >
           <a
@@ -26,7 +26,7 @@ exports[`<MainLayout/> > should render succesfully 1`] = `
           >
             Create
           </a>
-        </div>
+        </nav>
         <p
           class="chakra-text css-0"
         >
@@ -89,7 +89,7 @@ exports[`<MainLayout/> > should render succesfully 1`] = `
     <div
       class="css-0"
     >
-      <div
+      <nav
         class="css-lhoiow"
       >
         <a
@@ -105,7 +105,7 @@ exports[`<MainLayout/> > should render succesfully 1`] = `
         >
           Create
         </a>
-      </div>
+      </nav>
       <p
         class="chakra-text css-0"
       >

@@ -1,6 +1,7 @@
 import { describe, expect, test } from "vitest";
 import { render } from "../../../test-utils";
-import { PlanetCard, PlanetCardProps } from "./PlanetCard";
+import type { PlanetCardProps } from "./PlanetCard";
+import { PlanetCard } from "./PlanetCard";
 
 describe("<PlanetCard/>", () => {
   const defaultProps = {

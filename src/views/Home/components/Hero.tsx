@@ -3,7 +3,7 @@ import darth from "../../../assets/Darth-Vader-PNG-HD-Image.png";
 
 export const Hero = () => {
   return (
-    <Flex overflow="hidden" w="full" minH="100vh" bg="red.500" alignItems="center" py={20} pos="relative">
+    <Flex as="section" overflow="hidden" w="full" minH="100vh" bg="red.500" alignItems="center" py={20} pos="relative">
       <Box zIndex={1} ml={{ base: 4, lg: 12 }} alignSelf="stretch" w="1px" bgColor="white"></Box>
       <Heading
         zIndex={1}

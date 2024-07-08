@@ -32,7 +32,7 @@ export const PlanetForm = ({ onSubmit, confirmText }: PlanetFormProps) => {
           maxLength: maxLength(100)
         }}
       />
-      <InputController id="diameter" type="number" label="Diameter" control={control} />
+      <InputController id="diameter" type="number" label="Diameter (km)" control={control} />
       <InputController id="population" type="number" label="Population" control={control} />
       <InputController
         id="climate"

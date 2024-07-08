@@ -19,6 +19,7 @@ exports[`<PlanetCard/> > should render succesfully 1`] = `
         residents="https://swapi.dev/api/people/83/"
         rotation_period="27"
         surface_water="0.9"
+        url="https://swapi.dev/api/planets/12/"
       >
         <div
           class="css-upfzb1"
@@ -40,6 +41,7 @@ exports[`<PlanetCard/> > should render succesfully 1`] = `
           >
             Diameter: 
             12900
+            km
           </p>
           <p
             class="chakra-text css-0"
@@ -126,6 +128,7 @@ exports[`<PlanetCard/> > should render succesfully 1`] = `
       residents="https://swapi.dev/api/people/83/"
       rotation_period="27"
       surface_water="0.9"
+      url="https://swapi.dev/api/planets/12/"
     >
       <div
         class="css-upfzb1"
@@ -147,6 +150,7 @@ exports[`<PlanetCard/> > should render succesfully 1`] = `
         >
           Diameter: 
           12900
+          km
         </p>
         <p
           class="chakra-text css-0"

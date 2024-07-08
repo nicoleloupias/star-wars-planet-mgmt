@@ -1,4 +1,4 @@
-import { RawPlanet } from "../services/types/Planet";
+import type { RawPlanet } from "../services/types/Planet";
 
 export const getPlanetId = (url: RawPlanet["url"]) => {
   const regex = /\/planets\/(\d+)\//;

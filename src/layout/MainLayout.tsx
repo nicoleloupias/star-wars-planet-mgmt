@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 export const MainLayout = ({ children }: { children: React.ReactElement }) => {
   return (
     <Box>
-      <Flex zIndex={1} p={4} gap={6} pos="fixed">
+      <Flex as="nav" zIndex={1} p={4} gap={6} pos="fixed">
         <Link as={NavLink} to="/">
           Home
         </Link>

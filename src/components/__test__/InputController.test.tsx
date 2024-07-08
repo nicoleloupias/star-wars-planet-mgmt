@@ -1,8 +1,10 @@
 import { describe, expect, test, vi } from "vitest";
 import { render } from "../../test-utils";
 import { act, fireEvent, waitFor } from "@testing-library/react";
-import { InputController, InputControllerProps } from "../InputController";
-import { FieldValues, UseFormReturn, useForm } from "react-hook-form";
+import type { InputControllerProps } from "../InputController";
+import { InputController } from "../InputController";
+import type { FieldValues, UseFormReturn } from "react-hook-form";
+import { useForm } from "react-hook-form";
 type DefaultProps = Omit<InputControllerProps<FieldValues>, "control">;
 
 describe("<InputController/>", () => {

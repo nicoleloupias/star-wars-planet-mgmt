@@ -1,7 +1,9 @@
-import { PlanetForm, PlanetFormFieldValues } from "../PlanetForm";
+import type { PlanetFormFieldValues } from "../PlanetForm";
+import { PlanetForm } from "../PlanetForm";
 import { FormProvider, useForm } from "react-hook-form";
 import { Center, Container, Heading, useToast } from "@chakra-ui/react";
-import { Planet, usePlanetsStore } from "../../../hooks/usePlanetsStore";
+import type { Planet } from "../../../hooks/usePlanetsStore";
+import { usePlanetsStore } from "../../../hooks/usePlanetsStore";
 import { useNavigate } from "react-router-dom";
 
 export const CreatePlanet = () => {

@@ -1,13 +1,13 @@
 import { create } from "zustand";
-import { Planet } from "./usePlanetsStore";
-import { Resident } from "../services/types/Resident";
+import type { Planet } from "./usePlanetsStore";
+import type { Resident } from "../services/types/Resident";
 
 interface ResidentsStore {
   residents: Record<Planet["id"], Resident[]>;
   setResident: (planetId: Planet["id"], resident: Resident) => void;
 }
 
-export const useResidentsStore = create<ResidentsStore>((set, get) => ({
+export const useResidentsStore = create<ResidentsStore>((set) => ({
   residents: {},
   setResident: (planetId, resident) => {
     return set((state) => {

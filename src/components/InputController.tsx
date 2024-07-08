@@ -1,13 +1,7 @@
-import {
-  FormControl,
-  FormErrorMessage,
-  FormLabel,
-  Input,
-  InputGroup,
-  InputProps,
-  InputRightElement
-} from "@chakra-ui/react";
-import { Control, FieldValues, UseControllerProps, useController } from "react-hook-form";
+import type { InputProps } from "@chakra-ui/react";
+import { FormControl, FormErrorMessage, FormLabel, Input, InputGroup, InputRightElement } from "@chakra-ui/react";
+import type { Control, FieldValues, UseControllerProps } from "react-hook-form";
+import { useController } from "react-hook-form";
 
 export interface InputControllerProps<T extends FieldValues> extends InputProps {
   id: UseControllerProps<T>["name"];
@@ -15,6 +9,7 @@ export interface InputControllerProps<T extends FieldValues> extends InputProps 
   label: string;
   rules?: Record<string, unknown>;
   iconRight?: React.ReactElement;
+  showLabel?: boolean;
 }
 export const InputController = <T extends FieldValues>({
   id,
@@ -22,6 +17,7 @@ export const InputController = <T extends FieldValues>({
   label,
   rules,
   iconRight,
+  showLabel = true,
   ...props
 }: InputControllerProps<T>) => {
   const { field, fieldState } = useController<T>({
@@ -34,7 +30,7 @@ export const InputController = <T extends FieldValues>({
 
   return (
     <FormControl isInvalid={fieldState.invalid}>
-      <FormLabel htmlFor={id}>{label}</FormLabel>
+      {showLabel && <FormLabel htmlFor={id}>{label}</FormLabel>}
       <InputGroup>
         <Input data-testid={id} id={id} placeholder={label} {...field} value={field.value || ""} {...props} />
 

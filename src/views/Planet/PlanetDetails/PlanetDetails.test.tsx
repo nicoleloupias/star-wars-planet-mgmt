@@ -3,10 +3,9 @@ import { render } from "../../../test-utils";
 import { fireEvent, waitFor } from "@testing-library/react";
 import { PlanetDetails } from "./PlanetDetails";
 import { usePlanetsStore } from "../../../hooks/usePlanetsStore";
-import { MemoryHistory, createMemoryHistory } from "history";
+import type { MemoryHistory } from "history";
+import { createMemoryHistory } from "history";
 import { Route, Routes } from "react-router-dom";
-import axios from "axios";
-import { vi } from "vitest";
 import { useResidentsStore } from "../../../hooks/useResidentsStore";
 
 describe("<PlanetDetails />", () => {

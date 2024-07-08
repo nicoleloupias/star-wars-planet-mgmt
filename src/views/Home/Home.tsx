@@ -1,80 +1,37 @@
-import { Box, Center, Flex, IconButton, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Center, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 import { PlanetCard } from "./components/PlanetCard";
-import { Planet, usePlanetsStore } from "../../hooks/usePlanetsStore";
+import type { Planet } from "../../hooks/usePlanetsStore";
+import { usePlanetsStore } from "../../hooks/usePlanetsStore";
 import { Hero } from "./components/Hero";
-import { useMemo, useState } from "react";
-import { InputController } from "../../components/InputController";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { CloseIcon, SearchIcon } from "@chakra-ui/icons";
+import { SortBy } from "./components/SortBy";
+import { SearchBar } from "./components/SearchBar";
 
 export const Home = () => {
   const planets = usePlanetsStore((state) => state.planets);
-  const [searchResults, setSearchResults] = useState<Planet[]>();
-  const { control, watch, resetField } = useForm();
+  const [planetsToShow, setPlanetsToShow] = useState<Planet[] | undefined>();
+  const form = useForm<{ search: string; sortBy: "name" | "diameter" | "climate" | "terrain" | "population" }>();
 
-  const searchValue = watch("search");
-
-  const handleSearchPlanet = (e: React.MouseEvent<HTMLElement>) => {
-    e.preventDefault();
-    const result = planets?.filter((planet) => {
-      if (!searchValue) return planet;
-
-      return [planet.name.toLowerCase(), planet.climate.toLowerCase(), planet.terrain.toLowerCase()].includes(
-        searchValue
-      );
-    });
-
-    setSearchResults(result);
-  };
-
-  const handleResetSearch = () => {
-    resetField("search");
-    setSearchResults(undefined);
-  };
-
-  const planetsToShow = useMemo(() => {
-    if (searchResults && watch("search")) return searchResults;
-    return planets;
-  }, [planets, searchResults]);
+  useEffect(() => {
+    if (planets) {
+      setPlanetsToShow([...planets]);
+    }
+  }, [planets]);
 
   return (
     <>
       <Hero />
       <Center flexDir="column">
-        <Box minW={{ lg: "1040px" }} mt={10}>
-          <Flex as="form" maxW={80}>
-            <InputController
-              id="search"
-              label="Search"
-              control={control}
-              iconRight={
-                <Flex gap={2} mr={6}>
-                  {watch("search") && (
-                    <IconButton
-                      onClick={handleResetSearch}
-                      minW={4}
-                      size="xs"
-                      variant="transparent"
-                      aria-label="Remove search"
-                      icon={<CloseIcon />}
-                    />
-                  )}
-                  <IconButton
-                    onClick={handleSearchPlanet}
-                    minW={4}
-                    type="submit"
-                    size="xs"
-                    variant="transparent"
-                    aria-label="Search"
-                    icon={<SearchIcon />}
-                  />
-                </Flex>
-              }
-            />
+        <Box as="section" minW={{ lg: "1040px" }} mt={10}>
+          <Flex as="form" gap={2} justifyItems="flex-start">
+            <SearchBar setPlanetsToShow={setPlanetsToShow} form={form} />
+            <SortBy setPlanetsToShow={setPlanetsToShow} planetsToShow={planetsToShow} form={form} />
           </Flex>
+
           <SimpleGrid my={20} columns={{ base: 1, md: 2, lg: 3 }} gap={10}>
             {planetsToShow && planetsToShow?.map((planet) => <PlanetCard key={planet.id} {...planet} />)}
-            {watch("search") && planetsToShow?.length === 0 && <Text>There are no results with this search</Text>}
+            {form.watch("search") && planetsToShow?.length === 0 && <Text>There are no results with this search</Text>}
           </SimpleGrid>
         </Box>
       </Center>

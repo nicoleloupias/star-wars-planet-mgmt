@@ -19,7 +19,8 @@ function App() {
     if (!planets) {
       getAllPlanets();
     }
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [planets]);
 
   return (
     <ChakraProvider theme={theme}>

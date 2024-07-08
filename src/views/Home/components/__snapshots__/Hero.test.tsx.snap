@@ -7,7 +7,7 @@ exports[`<Hero/> > should render succesfully 1`] = `
     class="chakra-ui-dark"
   >
     <div>
-      <div
+      <section
         class="css-1lbat96"
       >
         <div
@@ -30,7 +30,7 @@ exports[`<Hero/> > should render succesfully 1`] = `
           class="chakra-image css-odqkwc"
           src="/src/assets/Darth-Vader-PNG-HD-Image.png"
         />
-      </div>
+      </section>
       <span
         hidden=""
         id="__chakra_env"
@@ -84,7 +84,7 @@ exports[`<Hero/> > should render succesfully 1`] = `
     </div>
   </body>,
   "container": <div>
-    <div
+    <section
       class="css-1lbat96"
     >
       <div
@@ -107,7 +107,7 @@ exports[`<Hero/> > should render succesfully 1`] = `
         class="chakra-image css-odqkwc"
         src="/src/assets/Darth-Vader-PNG-HD-Image.png"
       />
-    </div>
+    </section>
     <span
       hidden=""
       id="__chakra_env"

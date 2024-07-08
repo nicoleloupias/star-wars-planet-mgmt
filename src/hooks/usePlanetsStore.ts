@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { RawPlanet } from "../services/types/Planet";
+import type { RawPlanet } from "../services/types/Planet";
 import { getPlanetId } from "../helpers/planet";
 
 export interface Planet extends RawPlanet {

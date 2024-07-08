@@ -1,12 +1,13 @@
-import { Box, Card, Center, Circle, FlexProps, Heading, Text } from "@chakra-ui/react";
+import type { FlexProps } from "@chakra-ui/react";
+import { Box, Card, Center, Circle, Heading, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import stars from "../../../assets/stars.png";
 import { getRandomPlanetColor } from "../../../helpers/planet";
-import { Planet } from "../../../hooks/usePlanetsStore";
+import type { Planet } from "../../../hooks/usePlanetsStore";
 
 export interface PlanetCardProps extends Omit<FlexProps, "id">, Planet {}
 
-export const PlanetCard = ({ id, name, diameter, climate, terrain, population, url, ...props }: PlanetCardProps) => {
+export const PlanetCard = ({ id, name, diameter, climate, terrain, population, ...props }: PlanetCardProps) => {
   const planetColor = getRandomPlanetColor(name);
 
   return (
@@ -55,7 +56,7 @@ export const PlanetCard = ({ id, name, diameter, climate, terrain, population, u
         className="cardDetails"
       >
         <Heading color="gray.50">{name}</Heading>
-        <Text>Diameter: {diameter}</Text>
+        <Text>Diameter: {diameter}km</Text>
         <Text>Climate: {climate}</Text>
         <Text>Terrain: {terrain}</Text>
         <Text>Population: {population}</Text>

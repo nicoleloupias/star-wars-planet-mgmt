@@ -47,7 +47,7 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
             for="diameter"
             id="field-:r1:-label"
           >
-            Diameter
+            Diameter (km)
           </label>
           <div
             class="chakra-input__group css-1y0e7gb"
@@ -58,7 +58,7 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
               data-testid="diameter"
               id="diameter"
               name="diameter"
-              placeholder="Diameter"
+              placeholder="Diameter (km)"
               type="number"
               value=""
             />
@@ -156,13 +156,13 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
           class="css-u8chpe"
         >
           <button
-            class="chakra-button css-4g9tt9"
+            class="chakra-button css-1bvqs64"
             type="button"
           >
             Cancel
           </button>
           <button
-            class="chakra-button css-12euwm4"
+            class="chakra-button css-advwry"
             disabled=""
             type="submit"
           >
@@ -263,7 +263,7 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
           for="diameter"
           id="field-:r1:-label"
         >
-          Diameter
+          Diameter (km)
         </label>
         <div
           class="chakra-input__group css-1y0e7gb"
@@ -274,7 +274,7 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
             data-testid="diameter"
             id="diameter"
             name="diameter"
-            placeholder="Diameter"
+            placeholder="Diameter (km)"
             type="number"
             value=""
           />
@@ -372,13 +372,13 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
         class="css-u8chpe"
       >
         <button
-          class="chakra-button css-4g9tt9"
+          class="chakra-button css-1bvqs64"
           type="button"
         >
           Cancel
         </button>
         <button
-          class="chakra-button css-12euwm4"
+          class="chakra-button css-advwry"
           disabled=""
           type="submit"
         >

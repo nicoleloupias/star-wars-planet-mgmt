@@ -1,7 +1,9 @@
-import { PlanetForm, PlanetFormFieldValues } from "../PlanetForm";
+import type { PlanetFormFieldValues } from "../PlanetForm";
+import { PlanetForm } from "../PlanetForm";
 import { FormProvider, useForm } from "react-hook-form";
 import { Center, Container, Heading, useToast } from "@chakra-ui/react";
-import { Planet, usePlanetsStore } from "../../../hooks/usePlanetsStore";
+import type { Planet } from "../../../hooks/usePlanetsStore";
+import { usePlanetsStore } from "../../../hooks/usePlanetsStore";
 import { useNavigate, useParams } from "react-router-dom";
 
 export const EditPlanet = () => {
@@ -15,8 +17,8 @@ export const EditPlanet = () => {
     mode: "all",
     defaultValues: {
       name: data?.name,
-      diameter: data?.diameter !== "unknown" ? parseInt(data?.diameter!) : undefined,
-      population: data?.population !== "unknown" ? parseInt(data?.population!) : undefined,
+      diameter: data?.diameter !== "unknown" ? parseInt(data?.diameter ?? "") : undefined,
+      population: data?.population !== "unknown" ? parseInt(data?.population ?? "") : undefined,
       climate: data?.climate,
       terrain: data?.terrain
     }

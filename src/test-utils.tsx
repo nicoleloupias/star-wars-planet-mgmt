@@ -4,7 +4,7 @@ import { render } from "@testing-library/react";
 import type { MemoryHistory } from "history";
 import { createMemoryHistory } from "history";
 import React from "react";
-import { Router, RouterProvider } from "react-router-dom";
+import { Router } from "react-router-dom";
 import { theme } from "./theme";
 const memoryHistory = createMemoryHistory();
 

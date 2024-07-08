@@ -10,7 +10,7 @@ exports[`<App/> > should render succesfully 1`] = `
       <div
         class="css-0"
       >
-        <div
+        <nav
           class="css-lhoiow"
         >
           <a
@@ -26,8 +26,8 @@ exports[`<App/> > should render succesfully 1`] = `
           >
             Create
           </a>
-        </div>
-        <div
+        </nav>
+        <section
           class="css-1lbat96"
         >
           <div
@@ -50,71 +50,124 @@ exports[`<App/> > should render succesfully 1`] = `
             class="chakra-image css-odqkwc"
             src="/src/assets/Darth-Vader-PNG-HD-Image.png"
           />
-        </div>
+        </section>
         <div
           class="css-b93e9j"
         >
-          <div
+          <section
             class="css-1bb2txy"
           >
             <form
-              class="css-1blwbva"
+              class="css-jh8cql"
             >
               <div
-                class="chakra-form-control css-1kxonj9"
-                role="group"
+                class="css-1moedo"
               >
-                <label
-                  class="chakra-form__label css-g6pte"
-                  for="search"
-                  id="field-:r0:-label"
-                >
-                  Search
-                </label>
                 <div
-                  class="chakra-input__group css-1y0e7gb"
-                  data-group="true"
+                  class="chakra-form-control css-1kxonj9"
+                  role="group"
                 >
-                  <input
-                    class="chakra-input css-1rrwde8"
-                    data-testid="search"
-                    id="search"
-                    name="search"
-                    placeholder="Search"
-                    value=""
-                  />
                   <div
-                    class="chakra-input__right-element css-1lds0jh"
+                    class="chakra-input__group css-1y0e7gb"
+                    data-group="true"
                   >
+                    <input
+                      class="chakra-input css-1rrwde8"
+                      data-testid="search"
+                      id="search"
+                      name="search"
+                      placeholder="Search"
+                      value=""
+                    />
                     <div
-                      class="css-1rs9p06"
+                      class="chakra-input__right-element css-1lds0jh"
                     >
-                      <button
-                        aria-label="Search"
-                        class="chakra-button css-1ni11ii"
-                        type="submit"
+                      <div
+                        class="css-1rs9p06"
                       >
-                        <svg
-                          aria-hidden="true"
-                          class="chakra-icon css-onkibi"
-                          focusable="false"
-                          viewBox="0 0 24 24"
+                        <button
+                          aria-label="Search"
+                          class="chakra-button css-1ni11ii"
+                          type="submit"
                         >
-                          <path
-                            d="M23.384,21.619,16.855,15.09a9.284,9.284,0,1,0-1.768,1.768l6.529,6.529a1.266,1.266,0,0,0,1.768,0A1.251,1.251,0,0,0,23.384,21.619ZM2.75,9.5a6.75,6.75,0,1,1,6.75,6.75A6.758,6.758,0,0,1,2.75,9.5Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </button>
+                          <svg
+                            aria-hidden="true"
+                            class="chakra-icon css-onkibi"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M23.384,21.619,16.855,15.09a9.284,9.284,0,1,0-1.768,1.768l6.529,6.529a1.266,1.266,0,0,0,1.768,0A1.251,1.251,0,0,0,23.384,21.619ZM2.75,9.5a6.75,6.75,0,1,1,6.75,6.75A6.758,6.758,0,0,1,2.75,9.5Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </button>
+                      </div>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div
+                class="chakra-select__wrapper css-vuj45d"
+              >
+                <select
+                  class="chakra-select css-szixr"
+                  name="sortBy"
+                >
+                  <option
+                    value=""
+                  >
+                    Order by
+                  </option>
+                  <option
+                    value="name"
+                  >
+                    Name
+                  </option>
+                  <option
+                    value="diameter"
+                  >
+                    Diameter
+                  </option>
+                  <option
+                    value="climate"
+                  >
+                    Climate
+                  </option>
+                  <option
+                    value="terrain"
+                  >
+                    Terrain
+                  </option>
+                  <option
+                    value="population"
+                  >
+                    Population
+                  </option>
+                </select>
+                <div
+                  class="chakra-select__icon-wrapper css-iohxn1"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="chakra-select__icon"
+                    focusable="false"
+                    role="presentation"
+                    style="width: 1em; height: 1em; color: currentColor;"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                      fill="currentColor"
+                    />
+                  </svg>
                 </div>
               </div>
             </form>
             <div
               class="css-1apmbyb"
             />
-          </div>
+          </section>
         </div>
       </div>
       <span
@@ -173,7 +226,7 @@ exports[`<App/> > should render succesfully 1`] = `
     <div
       class="css-0"
     >
-      <div
+      <nav
         class="css-lhoiow"
       >
         <a
@@ -189,8 +242,8 @@ exports[`<App/> > should render succesfully 1`] = `
         >
           Create
         </a>
-      </div>
-      <div
+      </nav>
+      <section
         class="css-1lbat96"
       >
         <div
@@ -213,71 +266,124 @@ exports[`<App/> > should render succesfully 1`] = `
           class="chakra-image css-odqkwc"
           src="/src/assets/Darth-Vader-PNG-HD-Image.png"
         />
-      </div>
+      </section>
       <div
         class="css-b93e9j"
       >
-        <div
+        <section
           class="css-1bb2txy"
         >
           <form
-            class="css-1blwbva"
+            class="css-jh8cql"
           >
             <div
-              class="chakra-form-control css-1kxonj9"
-              role="group"
+              class="css-1moedo"
             >
-              <label
-                class="chakra-form__label css-g6pte"
-                for="search"
-                id="field-:r0:-label"
-              >
-                Search
-              </label>
               <div
-                class="chakra-input__group css-1y0e7gb"
-                data-group="true"
+                class="chakra-form-control css-1kxonj9"
+                role="group"
               >
-                <input
-                  class="chakra-input css-1rrwde8"
-                  data-testid="search"
-                  id="search"
-                  name="search"
-                  placeholder="Search"
-                  value=""
-                />
                 <div
-                  class="chakra-input__right-element css-1lds0jh"
+                  class="chakra-input__group css-1y0e7gb"
+                  data-group="true"
                 >
+                  <input
+                    class="chakra-input css-1rrwde8"
+                    data-testid="search"
+                    id="search"
+                    name="search"
+                    placeholder="Search"
+                    value=""
+                  />
                   <div
-                    class="css-1rs9p06"
+                    class="chakra-input__right-element css-1lds0jh"
                   >
-                    <button
-                      aria-label="Search"
-                      class="chakra-button css-1ni11ii"
-                      type="submit"
+                    <div
+                      class="css-1rs9p06"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="chakra-icon css-onkibi"
-                        focusable="false"
-                        viewBox="0 0 24 24"
+                      <button
+                        aria-label="Search"
+                        class="chakra-button css-1ni11ii"
+                        type="submit"
                       >
-                        <path
-                          d="M23.384,21.619,16.855,15.09a9.284,9.284,0,1,0-1.768,1.768l6.529,6.529a1.266,1.266,0,0,0,1.768,0A1.251,1.251,0,0,0,23.384,21.619ZM2.75,9.5a6.75,6.75,0,1,1,6.75,6.75A6.758,6.758,0,0,1,2.75,9.5Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </button>
+                        <svg
+                          aria-hidden="true"
+                          class="chakra-icon css-onkibi"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M23.384,21.619,16.855,15.09a9.284,9.284,0,1,0-1.768,1.768l6.529,6.529a1.266,1.266,0,0,0,1.768,0A1.251,1.251,0,0,0,23.384,21.619ZM2.75,9.5a6.75,6.75,0,1,1,6.75,6.75A6.758,6.758,0,0,1,2.75,9.5Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div
+              class="chakra-select__wrapper css-vuj45d"
+            >
+              <select
+                class="chakra-select css-szixr"
+                name="sortBy"
+              >
+                <option
+                  value=""
+                >
+                  Order by
+                </option>
+                <option
+                  value="name"
+                >
+                  Name
+                </option>
+                <option
+                  value="diameter"
+                >
+                  Diameter
+                </option>
+                <option
+                  value="climate"
+                >
+                  Climate
+                </option>
+                <option
+                  value="terrain"
+                >
+                  Terrain
+                </option>
+                <option
+                  value="population"
+                >
+                  Population
+                </option>
+              </select>
+              <div
+                class="chakra-select__icon-wrapper css-iohxn1"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="chakra-select__icon"
+                  focusable="false"
+                  role="presentation"
+                  style="width: 1em; height: 1em; color: currentColor;"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                    fill="currentColor"
+                  />
+                </svg>
               </div>
             </div>
           </form>
           <div
             class="css-1apmbyb"
           />
-        </div>
+        </section>
       </div>
     </div>
     <span

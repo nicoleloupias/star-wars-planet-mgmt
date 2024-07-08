@@ -1,4 +1,5 @@
-import { http, HttpHandler, HttpResponse } from "msw";
+import type { HttpHandler } from "msw";
+import { http, HttpResponse } from "msw";
 import { BASE_API_URL } from "../services";
 
 export const handlers: HttpHandler[] = [
