@@ -8,8 +8,8 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Running the Project](#running-the-project)
-- [Scripts](#scripts)
 - [Testing](#testing)
+- [Docker](#docker)
 
 ## About
 
@@ -20,6 +20,7 @@ The Planet Management System is a React application developed using Vite and Typ
 - Add, edit, and delete planets
 - View detailed information about each planet
 - Search planets
+- Sort planets
 - Responsive design
 
 ## Setup and Usage
@@ -60,7 +61,7 @@ To start the development server, run:
 
 This will start the application at `http://localhost:5173`
 
-### Testing
+## Testing
 
 ```sh
   npm run test
@@ -75,3 +76,17 @@ npm run coverage
 # or
 yarn coverage
 ```
+
+## Docker
+
+To get the docker image running, make sure to have [Docker](https://www.docker.com/products/docker-desktop/) installed and running.
+
+Then run:
+
+```sh
+npm run docker
+# or
+yarn docker
+```
+
+You should see the application running in [http://localhost:80](http://localhost:80)
