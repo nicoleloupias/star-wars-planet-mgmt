@@ -30,7 +30,7 @@ export const Home = () => {
     <>
       <Hero />
       <Center flexDir="column">
-        <Box as="section" minW={{ lg: "1040px" }} mt={10}>
+        <Box as="section" minW={{ lg: "1040px" }} my={10}>
           <Flex as="form" gap={2} justifyItems="flex-start" flexDir={{ base: "column", lg: "row" }}>
             <SearchBar setPlanetsToShow={setPlanetsToShow} form={form} />
             <SortBy setPlanetsToShow={setPlanetsToShow} planetsToShow={planetsToShow} form={form} />

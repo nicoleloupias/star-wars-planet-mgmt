@@ -93,7 +93,7 @@ export const PlanetDetails = () => {
                 ))}
               </UnorderedList>
             ) : (
-              <Text>There are no residents in this planet.</Text>
+              <Text textTransform="initial">There are no residents in this planet.</Text>
             )}
           </Box>
 

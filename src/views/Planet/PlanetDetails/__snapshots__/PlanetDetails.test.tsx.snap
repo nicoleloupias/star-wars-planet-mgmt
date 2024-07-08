@@ -72,7 +72,7 @@ exports[`<PlanetDetails /> > should render succesfully 1`] = `
                 Residents
               </h3>
               <p
-                class="chakra-text css-0"
+                class="chakra-text css-5zyh61"
               >
                 There are no residents in this planet.
               </p>
@@ -257,7 +257,7 @@ exports[`<PlanetDetails /> > should render succesfully 1`] = `
               Residents
             </h3>
             <p
-              class="chakra-text css-0"
+              class="chakra-text css-5zyh61"
             >
               There are no residents in this planet.
             </p>

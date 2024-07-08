@@ -108,3 +108,4 @@ You should see the application running in [http://localhost:80](http://localhost
 - Router paths in constants.
 - Add more testing to hooks, router, services and utils.
 - Get endpoint urls from constant instead of raw strings.
+- Add precommit hook
