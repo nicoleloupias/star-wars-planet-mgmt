@@ -37,7 +37,7 @@ export const SortBy = ({ setPlanetsToShow, planetsToShow, form }: SortByProps) =
       <option value="diameter">Diameter</option>
       <option value="climate">Climate</option>
       <option value="terrain">Terrain</option>
-      <option value="population">Population</option>
+      <option value="population">Habitants</option>
     </Select>
   );
 };

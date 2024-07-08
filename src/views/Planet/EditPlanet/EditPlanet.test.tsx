@@ -74,13 +74,13 @@ describe("<EditPlanet/>", () => {
     });
 
     await waitFor(() => {
-      expect(component.getByRole("button", { name: /Edit/ })).toBeEnabled();
+      expect(component.getByRole("button", { name: /Accept/ })).toBeEnabled();
     });
 
     expect(history.location.pathname).toBe("/11/edit");
     expect(usePlanetsStore.getState().planets?.[0].climate).toBe(planetData.climate);
 
-    fireEvent.click(component.getByRole("button", { name: /Edit/ }));
+    fireEvent.click(component.getByRole("button", { name: /Accept/ }));
 
     await waitFor(() => {
       expect(usePlanetsStore.getState().planets?.length).toBe(1);
@@ -95,14 +95,14 @@ describe("<EditPlanet/>", () => {
 
     act(() => {
       fireEvent.change(component.getByRole("spinbutton", { name: "Diameter (km)" }), { target: { value: "" } });
-      fireEvent.change(component.getByRole("spinbutton", { name: "Population" }), { target: { value: "" } });
+      fireEvent.change(component.getByRole("spinbutton", { name: "Habitants" }), { target: { value: "" } });
     });
 
     await waitFor(() => {
-      expect(component.getByRole("button", { name: /Edit/ })).toBeEnabled();
+      expect(component.getByRole("button", { name: /Accept/ })).toBeEnabled();
     });
 
-    fireEvent.click(component.getByRole("button", { name: /Edit/ }));
+    fireEvent.click(component.getByRole("button", { name: /Accept/ }));
 
     await waitFor(() => {
       expect(usePlanetsStore.getState().planets?.[0].diameter).toBe("unknown");

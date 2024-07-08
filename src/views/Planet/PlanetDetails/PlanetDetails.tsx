@@ -1,4 +1,16 @@
-import { Box, Button, Center, Circle, Flex, Heading, ListItem, OrderedList, Text, useToast } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Center,
+  Circle,
+  Flex,
+  Heading,
+  ListItem,
+  OrderedList,
+  Text,
+  UnorderedList,
+  useToast
+} from "@chakra-ui/react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { usePlanetsStore } from "../../../hooks/usePlanetsStore";
 import stars from "../../../assets/stars.png";
@@ -63,10 +75,10 @@ export const PlanetDetails = () => {
         />
       </Center>
       <Box w="full" flex={1 / 3}>
-        <Box bgColor="red.500" p={6} mb={6}>
+        <Box bgColor="red.500" p={6} pl={8} mb={6}>
           <Heading color="gray.50">Planet: {data?.name}</Heading>
         </Box>
-        <Box ml={6} textTransform="capitalize">
+        <Box ml={8} textTransform="capitalize">
           <Text>
             Diameter: {data?.diameter}{" "}
             {data?.diameter !== "unknown" && (
@@ -77,7 +89,7 @@ export const PlanetDetails = () => {
           </Text>
           <Text>Climate: {data?.climate}</Text>
           <Text>Terrain: {data?.terrain}</Text>
-          <Text>Population: {data?.population}</Text>
+          <Text>Habitants: {data?.population}</Text>
 
           <Box mt={4}>
             <Heading as="h3" fontSize="xl">
@@ -85,13 +97,13 @@ export const PlanetDetails = () => {
             </Heading>
 
             {residents?.length > 0 ? (
-              <OrderedList>
+              <UnorderedList fontSize="sm">
                 {residents?.map(({ name, gender }, i) => (
                   <ListItem key={i}>
                     {name} - {gender}
                   </ListItem>
                 ))}
-              </OrderedList>
+              </UnorderedList>
             ) : (
               <Text>There are no residents in this planet.</Text>
             )}

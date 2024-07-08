@@ -28,7 +28,7 @@ describe("<PlanetForm/>", () => {
     act(() => {
       fireEvent.change(component.getByRole("textbox", { name: "Name" }), { target: { value: "Alex" } });
       fireEvent.change(component.getByRole("textbox", { name: "Climate" }), { target: { value: "Hot" } });
-      fireEvent.change(component.getByRole("spinbutton", { name: "Population" }), { target: { value: "1000" } });
+      fireEvent.change(component.getByRole("spinbutton", { name: "Habitants" }), { target: { value: "1000" } });
       fireEvent.change(component.getByRole("textbox", { name: "Terrain" }), { target: { value: "Terrain" } });
       fireEvent.change(component.getByRole("spinbutton", { name: "Diameter (km)" }), { target: { value: "150" } });
     });
@@ -45,7 +45,7 @@ describe("<PlanetForm/>", () => {
 
     expect(component.getByRole("textbox", { name: "Name" })).toBeInTheDocument();
     expect(component.getByRole("textbox", { name: "Climate" })).toBeInTheDocument();
-    expect(component.getByRole("spinbutton", { name: "Population" })).toBeInTheDocument();
+    expect(component.getByRole("spinbutton", { name: "Habitants" })).toBeInTheDocument();
     expect(component.getByRole("textbox", { name: "Terrain" })).toBeInTheDocument();
     expect(component.getByRole("spinbutton", { name: "Diameter (km)" })).toBeInTheDocument();
   });

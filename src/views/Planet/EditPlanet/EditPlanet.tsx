@@ -53,7 +53,7 @@ export const EditPlanet = () => {
       <Container maxW="500px">
         <Heading mb={6}>Edit planet</Heading>
         <FormProvider {...form}>
-          <PlanetForm onSubmit={form.handleSubmit(handleEditPlanet)} confirmText="Edit" />
+          <PlanetForm onSubmit={form.handleSubmit(handleEditPlanet)} confirmText="Accept" />
         </FormProvider>
       </Container>
     </Center>

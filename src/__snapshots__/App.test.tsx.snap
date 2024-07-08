@@ -28,13 +28,13 @@ exports[`<App/> > should render succesfully 1`] = `
           </a>
         </nav>
         <section
-          class="css-1lbat96"
+          class="css-16hn594"
         >
           <div
             class="css-ybip2u"
           />
           <h2
-            class="chakra-heading css-s2chw8"
+            class="chakra-heading css-113y03g"
           >
             Explore the galaxy
           </h2>
@@ -42,7 +42,7 @@ exports[`<App/> > should render succesfully 1`] = `
             class="css-1etnvhi"
           />
           <p
-            class="chakra-text css-1is01ss"
+            class="chakra-text css-1kyjpe6"
           >
             Scroll
             <svg
@@ -56,10 +56,6 @@ exports[`<App/> > should render succesfully 1`] = `
               />
             </svg>
           </p>
-          <img
-            class="chakra-image css-odqkwc"
-            src="/src/assets/Darth-Vader-PNG-HD-Image.png"
-          />
         </section>
         <div
           class="css-b93e9j"
@@ -152,7 +148,7 @@ exports[`<App/> > should render succesfully 1`] = `
                   <option
                     value="population"
                   >
-                    Population
+                    Habitants
                   </option>
                 </select>
                 <div
@@ -177,6 +173,19 @@ exports[`<App/> > should render succesfully 1`] = `
             <div
               class="css-16138za"
             />
+            <button
+              class="chakra-button css-1bvqs64"
+              disabled=""
+              type="button"
+            >
+              Prev
+            </button>
+            <button
+              class="chakra-button css-1af772r"
+              type="button"
+            >
+              Next
+            </button>
           </section>
         </div>
       </div>
@@ -254,13 +263,13 @@ exports[`<App/> > should render succesfully 1`] = `
         </a>
       </nav>
       <section
-        class="css-1lbat96"
+        class="css-16hn594"
       >
         <div
           class="css-ybip2u"
         />
         <h2
-          class="chakra-heading css-s2chw8"
+          class="chakra-heading css-113y03g"
         >
           Explore the galaxy
         </h2>
@@ -268,7 +277,7 @@ exports[`<App/> > should render succesfully 1`] = `
           class="css-1etnvhi"
         />
         <p
-          class="chakra-text css-1is01ss"
+          class="chakra-text css-1kyjpe6"
         >
           Scroll
           <svg
@@ -282,10 +291,6 @@ exports[`<App/> > should render succesfully 1`] = `
             />
           </svg>
         </p>
-        <img
-          class="chakra-image css-odqkwc"
-          src="/src/assets/Darth-Vader-PNG-HD-Image.png"
-        />
       </section>
       <div
         class="css-b93e9j"
@@ -378,7 +383,7 @@ exports[`<App/> > should render succesfully 1`] = `
                 <option
                   value="population"
                 >
-                  Population
+                  Habitants
                 </option>
               </select>
               <div
@@ -403,6 +408,19 @@ exports[`<App/> > should render succesfully 1`] = `
           <div
             class="css-16138za"
           />
+          <button
+            class="chakra-button css-1bvqs64"
+            disabled=""
+            type="button"
+          >
+            Prev
+          </button>
+          <button
+            class="chakra-button css-1af772r"
+            type="button"
+          >
+            Next
+          </button>
         </section>
       </div>
     </div>

@@ -33,7 +33,7 @@ export const PlanetForm = ({ onSubmit, confirmText }: PlanetFormProps) => {
         }}
       />
       <InputController id="diameter" type="number" label="Diameter (km)" control={control} />
-      <InputController id="population" type="number" label="Population" control={control} />
+      <InputController id="population" type="number" label="Habitants" control={control} />
       <InputController
         id="climate"
         label="Climate"

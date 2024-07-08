@@ -87,7 +87,7 @@ exports[`<EditPlanet/> > should render succesfully 1`] = `
                 for="population"
                 id="field-:r2:-label"
               >
-                Population
+                Habitants
               </label>
               <div
                 class="chakra-input__group css-1y0e7gb"
@@ -98,7 +98,7 @@ exports[`<EditPlanet/> > should render succesfully 1`] = `
                   data-testid="population"
                   id="population"
                   name="population"
-                  placeholder="Population"
+                  placeholder="Habitants"
                   type="number"
                   value="100000000000"
                 />
@@ -177,7 +177,7 @@ exports[`<EditPlanet/> > should render succesfully 1`] = `
                 disabled=""
                 type="submit"
               >
-                Edit
+                Accept
               </button>
             </div>
           </form>
@@ -316,7 +316,7 @@ exports[`<EditPlanet/> > should render succesfully 1`] = `
               for="population"
               id="field-:r2:-label"
             >
-              Population
+              Habitants
             </label>
             <div
               class="chakra-input__group css-1y0e7gb"
@@ -327,7 +327,7 @@ exports[`<EditPlanet/> > should render succesfully 1`] = `
                 data-testid="population"
                 id="population"
                 name="population"
-                placeholder="Population"
+                placeholder="Habitants"
                 type="number"
                 value="100000000000"
               />
@@ -406,7 +406,7 @@ exports[`<EditPlanet/> > should render succesfully 1`] = `
               disabled=""
               type="submit"
             >
-              Edit
+              Accept
             </button>
           </div>
         </form>

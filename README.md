@@ -21,6 +21,7 @@ The Planet Management System is a React application developed using Vite and Typ
 - View detailed information about each planet
 - Search planets
 - Sort planets
+- Client side pagination on planets
 - Responsive design
 
 ## Setup and Usage
@@ -51,12 +52,14 @@ Make sure you have the following installed on your system:
 
 ### Running the project
 
-To start the development server, run:
+To start the development server, run the following commands:
 
 ```sh
   npm run dev
+  cp .env.demo .env
   # or
   yarn dev
+  cp .env.demo .env
 ```
 
 This will start the application at `http://localhost:5173`

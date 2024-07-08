@@ -76,7 +76,7 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
             for="population"
             id="field-:r2:-label"
           >
-            Population
+            Habitants
           </label>
           <div
             class="chakra-input__group css-1y0e7gb"
@@ -87,7 +87,7 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
               data-testid="population"
               id="population"
               name="population"
-              placeholder="Population"
+              placeholder="Habitants"
               type="number"
               value=""
             />
@@ -292,7 +292,7 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
           for="population"
           id="field-:r2:-label"
         >
-          Population
+          Habitants
         </label>
         <div
           class="chakra-input__group css-1y0e7gb"
@@ -303,7 +303,7 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
             data-testid="population"
             id="population"
             name="population"
-            placeholder="Population"
+            placeholder="Habitants"
             type="number"
             value=""
           />

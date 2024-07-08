@@ -8,13 +8,13 @@ exports[`<Home/> > should render succesfully 1`] = `
   >
     <div>
       <section
-        class="css-1lbat96"
+        class="css-16hn594"
       >
         <div
           class="css-ybip2u"
         />
         <h2
-          class="chakra-heading css-s2chw8"
+          class="chakra-heading css-113y03g"
         >
           Explore the galaxy
         </h2>
@@ -22,7 +22,7 @@ exports[`<Home/> > should render succesfully 1`] = `
           class="css-1etnvhi"
         />
         <p
-          class="chakra-text css-1is01ss"
+          class="chakra-text css-1kyjpe6"
         >
           Scroll
           <svg
@@ -36,10 +36,6 @@ exports[`<Home/> > should render succesfully 1`] = `
             />
           </svg>
         </p>
-        <img
-          class="chakra-image css-odqkwc"
-          src="/src/assets/Darth-Vader-PNG-HD-Image.png"
-        />
       </section>
       <div
         class="css-b93e9j"
@@ -132,7 +128,7 @@ exports[`<Home/> > should render succesfully 1`] = `
                 <option
                   value="population"
                 >
-                  Population
+                  Habitants
                 </option>
               </select>
               <div
@@ -158,39 +154,30 @@ exports[`<Home/> > should render succesfully 1`] = `
             class="css-16138za"
           >
             <a
-              class="chakra-card css-1olgpje"
-              created="2014-12-10T12:47:22.350000Z"
+              class="chakra-card css-ska63g"
               data-testid="planet-card"
-              edited="2014-12-20T20:58:18.437000Z"
-              films="https://swapi.dev/api/films/5/"
-              gravity="0.9 standard"
-              href="/11"
-              orbital_period="256"
-              residents="https://swapi.dev/api/people/63/"
-              rotation_period="30"
-              surface_water="5"
-              url="https://swapi.dev/api/planets/11/"
+              href="/1"
             >
               <div
                 class="css-upfzb1"
               >
                 <div
-                  class="planet css-5a7chc"
+                  class="planet css-hpphqc"
                 />
               </div>
               <div
                 class="cardDetails css-1weapz6"
               >
-                <h2
-                  class="chakra-heading css-q8veze"
+                <h3
+                  class="chakra-heading css-1hna34j"
                 >
-                  Geonosis
-                </h2>
+                  Tatooine
+                </h3>
                 <p
                   class="chakra-text css-0"
                 >
                   Diameter: 
-                  11370
+                  10465
                    
                   <span
                     class="css-1nvf5u9"
@@ -202,56 +189,47 @@ exports[`<Home/> > should render succesfully 1`] = `
                   class="chakra-text css-0"
                 >
                   Climate: 
-                  temperate, arid
+                  arid
                 </p>
                 <p
                   class="chakra-text css-0"
                 >
                   Terrain: 
-                  rock, desert, mountain, barren
+                  desert
                 </p>
                 <p
                   class="chakra-text css-0"
                 >
-                  Population: 
-                  100000000000
+                  Habitants: 
+                  200000
                 </p>
               </div>
             </a>
             <a
-              class="chakra-card css-1olgpje"
-              created="2014-12-10T12:49:01.491000Z"
+              class="chakra-card css-ska63g"
               data-testid="planet-card"
-              edited="2014-12-20T20:58:18.439000Z"
-              films="https://swapi.dev/api/films/6/"
-              gravity="1 standard"
-              href="/12"
-              orbital_period="351"
-              residents="https://swapi.dev/api/people/83/"
-              rotation_period="27"
-              surface_water="0.9"
-              url="https://swapi.dev/api/planets/12/"
+              href="/2"
             >
               <div
                 class="css-upfzb1"
               >
                 <div
-                  class="planet css-6tuw8o"
+                  class="planet css-99jkys"
                 />
               </div>
               <div
                 class="cardDetails css-1weapz6"
               >
-                <h2
-                  class="chakra-heading css-q8veze"
+                <h3
+                  class="chakra-heading css-1hna34j"
                 >
-                  Utapau
-                </h2>
+                  Alderaan
+                </h3>
                 <p
                   class="chakra-text css-0"
                 >
                   Diameter: 
-                  12900
+                  12500
                    
                   <span
                     class="css-1nvf5u9"
@@ -263,23 +241,452 @@ exports[`<Home/> > should render succesfully 1`] = `
                   class="chakra-text css-0"
                 >
                   Climate: 
-                  temperate, arid, windy
+                  temperate
                 </p>
                 <p
                   class="chakra-text css-0"
                 >
                   Terrain: 
-                  scrublands, savanna, canyons, sinkholes
+                  grasslands, mountains
                 </p>
                 <p
                   class="chakra-text css-0"
                 >
-                  Population: 
-                  95000000
+                  Habitants: 
+                  2000000000
+                </p>
+              </div>
+            </a>
+            <a
+              class="chakra-card css-ska63g"
+              data-testid="planet-card"
+              href="/3"
+            >
+              <div
+                class="css-upfzb1"
+              >
+                <div
+                  class="planet css-wb6ec1"
+                />
+              </div>
+              <div
+                class="cardDetails css-1weapz6"
+              >
+                <h3
+                  class="chakra-heading css-1hna34j"
+                >
+                  Yavin IV
+                </h3>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Diameter: 
+                  10200
+                   
+                  <span
+                    class="css-1nvf5u9"
+                  >
+                    km
+                  </span>
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Climate: 
+                  temperate, tropical
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Terrain: 
+                  jungle, rainforests
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Habitants: 
+                  1000
+                </p>
+              </div>
+            </a>
+            <a
+              class="chakra-card css-ska63g"
+              data-testid="planet-card"
+              href="/4"
+            >
+              <div
+                class="css-upfzb1"
+              >
+                <div
+                  class="planet css-kpj6g7"
+                />
+              </div>
+              <div
+                class="cardDetails css-1weapz6"
+              >
+                <h3
+                  class="chakra-heading css-1hna34j"
+                >
+                  Hoth
+                </h3>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Diameter: 
+                  7200
+                   
+                  <span
+                    class="css-1nvf5u9"
+                  >
+                    km
+                  </span>
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Climate: 
+                  frozen
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Terrain: 
+                  tundra, ice caves, mountain ranges
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Habitants: 
+                  unknown
+                </p>
+              </div>
+            </a>
+            <a
+              class="chakra-card css-ska63g"
+              data-testid="planet-card"
+              href="/5"
+            >
+              <div
+                class="css-upfzb1"
+              >
+                <div
+                  class="planet css-h5yfgu"
+                />
+              </div>
+              <div
+                class="cardDetails css-1weapz6"
+              >
+                <h3
+                  class="chakra-heading css-1hna34j"
+                >
+                  Dagobah
+                </h3>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Diameter: 
+                  8900
+                   
+                  <span
+                    class="css-1nvf5u9"
+                  >
+                    km
+                  </span>
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Climate: 
+                  murky
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Terrain: 
+                  swamp, jungles
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Habitants: 
+                  unknown
+                </p>
+              </div>
+            </a>
+            <a
+              class="chakra-card css-ska63g"
+              data-testid="planet-card"
+              href="/6"
+            >
+              <div
+                class="css-upfzb1"
+              >
+                <div
+                  class="planet css-x46186"
+                />
+              </div>
+              <div
+                class="cardDetails css-1weapz6"
+              >
+                <h3
+                  class="chakra-heading css-1hna34j"
+                >
+                  Bespin
+                </h3>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Diameter: 
+                  118000
+                   
+                  <span
+                    class="css-1nvf5u9"
+                  >
+                    km
+                  </span>
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Climate: 
+                  temperate
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Terrain: 
+                  gas giant
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Habitants: 
+                  6000000
+                </p>
+              </div>
+            </a>
+            <a
+              class="chakra-card css-ska63g"
+              data-testid="planet-card"
+              href="/7"
+            >
+              <div
+                class="css-upfzb1"
+              >
+                <div
+                  class="planet css-1k7y21q"
+                />
+              </div>
+              <div
+                class="cardDetails css-1weapz6"
+              >
+                <h3
+                  class="chakra-heading css-1hna34j"
+                >
+                  Endor
+                </h3>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Diameter: 
+                  4900
+                   
+                  <span
+                    class="css-1nvf5u9"
+                  >
+                    km
+                  </span>
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Climate: 
+                  temperate
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Terrain: 
+                  forests, mountains, lakes
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Habitants: 
+                  30000000
+                </p>
+              </div>
+            </a>
+            <a
+              class="chakra-card css-ska63g"
+              data-testid="planet-card"
+              href="/8"
+            >
+              <div
+                class="css-upfzb1"
+              >
+                <div
+                  class="planet css-1a189rz"
+                />
+              </div>
+              <div
+                class="cardDetails css-1weapz6"
+              >
+                <h3
+                  class="chakra-heading css-1hna34j"
+                >
+                  Naboo
+                </h3>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Diameter: 
+                  12120
+                   
+                  <span
+                    class="css-1nvf5u9"
+                  >
+                    km
+                  </span>
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Climate: 
+                  temperate
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Terrain: 
+                  grassy hills, swamps, forests, mountains
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Habitants: 
+                  4500000000
+                </p>
+              </div>
+            </a>
+            <a
+              class="chakra-card css-ska63g"
+              data-testid="planet-card"
+              href="/9"
+            >
+              <div
+                class="css-upfzb1"
+              >
+                <div
+                  class="planet css-17c27uo"
+                />
+              </div>
+              <div
+                class="cardDetails css-1weapz6"
+              >
+                <h3
+                  class="chakra-heading css-1hna34j"
+                >
+                  Coruscant
+                </h3>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Diameter: 
+                  12240
+                   
+                  <span
+                    class="css-1nvf5u9"
+                  >
+                    km
+                  </span>
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Climate: 
+                  temperate
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Terrain: 
+                  cityscape, mountains
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Habitants: 
+                  1000000000000
+                </p>
+              </div>
+            </a>
+            <a
+              class="chakra-card css-ska63g"
+              data-testid="planet-card"
+              href="/10"
+            >
+              <div
+                class="css-upfzb1"
+              >
+                <div
+                  class="planet css-1uif6ec"
+                />
+              </div>
+              <div
+                class="cardDetails css-1weapz6"
+              >
+                <h3
+                  class="chakra-heading css-1hna34j"
+                >
+                  Kamino
+                </h3>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Diameter: 
+                  19720
+                   
+                  <span
+                    class="css-1nvf5u9"
+                  >
+                    km
+                  </span>
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Climate: 
+                  temperate
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Terrain: 
+                  ocean
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Habitants: 
+                  1000000000
                 </p>
               </div>
             </a>
           </div>
+          <button
+            class="chakra-button css-1bvqs64"
+            disabled=""
+            type="button"
+          >
+            Prev
+          </button>
+          <button
+            class="chakra-button css-1af772r"
+            type="button"
+          >
+            Next
+          </button>
         </section>
       </div>
       <span
@@ -336,13 +743,13 @@ exports[`<Home/> > should render succesfully 1`] = `
   </body>,
   "container": <div>
     <section
-      class="css-1lbat96"
+      class="css-16hn594"
     >
       <div
         class="css-ybip2u"
       />
       <h2
-        class="chakra-heading css-s2chw8"
+        class="chakra-heading css-113y03g"
       >
         Explore the galaxy
       </h2>
@@ -350,7 +757,7 @@ exports[`<Home/> > should render succesfully 1`] = `
         class="css-1etnvhi"
       />
       <p
-        class="chakra-text css-1is01ss"
+        class="chakra-text css-1kyjpe6"
       >
         Scroll
         <svg
@@ -364,10 +771,6 @@ exports[`<Home/> > should render succesfully 1`] = `
           />
         </svg>
       </p>
-      <img
-        class="chakra-image css-odqkwc"
-        src="/src/assets/Darth-Vader-PNG-HD-Image.png"
-      />
     </section>
     <div
       class="css-b93e9j"
@@ -460,7 +863,7 @@ exports[`<Home/> > should render succesfully 1`] = `
               <option
                 value="population"
               >
-                Population
+                Habitants
               </option>
             </select>
             <div
@@ -486,39 +889,30 @@ exports[`<Home/> > should render succesfully 1`] = `
           class="css-16138za"
         >
           <a
-            class="chakra-card css-1olgpje"
-            created="2014-12-10T12:47:22.350000Z"
+            class="chakra-card css-ska63g"
             data-testid="planet-card"
-            edited="2014-12-20T20:58:18.437000Z"
-            films="https://swapi.dev/api/films/5/"
-            gravity="0.9 standard"
-            href="/11"
-            orbital_period="256"
-            residents="https://swapi.dev/api/people/63/"
-            rotation_period="30"
-            surface_water="5"
-            url="https://swapi.dev/api/planets/11/"
+            href="/1"
           >
             <div
               class="css-upfzb1"
             >
               <div
-                class="planet css-5a7chc"
+                class="planet css-hpphqc"
               />
             </div>
             <div
               class="cardDetails css-1weapz6"
             >
-              <h2
-                class="chakra-heading css-q8veze"
+              <h3
+                class="chakra-heading css-1hna34j"
               >
-                Geonosis
-              </h2>
+                Tatooine
+              </h3>
               <p
                 class="chakra-text css-0"
               >
                 Diameter: 
-                11370
+                10465
                  
                 <span
                   class="css-1nvf5u9"
@@ -530,56 +924,47 @@ exports[`<Home/> > should render succesfully 1`] = `
                 class="chakra-text css-0"
               >
                 Climate: 
-                temperate, arid
+                arid
               </p>
               <p
                 class="chakra-text css-0"
               >
                 Terrain: 
-                rock, desert, mountain, barren
+                desert
               </p>
               <p
                 class="chakra-text css-0"
               >
-                Population: 
-                100000000000
+                Habitants: 
+                200000
               </p>
             </div>
           </a>
           <a
-            class="chakra-card css-1olgpje"
-            created="2014-12-10T12:49:01.491000Z"
+            class="chakra-card css-ska63g"
             data-testid="planet-card"
-            edited="2014-12-20T20:58:18.439000Z"
-            films="https://swapi.dev/api/films/6/"
-            gravity="1 standard"
-            href="/12"
-            orbital_period="351"
-            residents="https://swapi.dev/api/people/83/"
-            rotation_period="27"
-            surface_water="0.9"
-            url="https://swapi.dev/api/planets/12/"
+            href="/2"
           >
             <div
               class="css-upfzb1"
             >
               <div
-                class="planet css-6tuw8o"
+                class="planet css-99jkys"
               />
             </div>
             <div
               class="cardDetails css-1weapz6"
             >
-              <h2
-                class="chakra-heading css-q8veze"
+              <h3
+                class="chakra-heading css-1hna34j"
               >
-                Utapau
-              </h2>
+                Alderaan
+              </h3>
               <p
                 class="chakra-text css-0"
               >
                 Diameter: 
-                12900
+                12500
                  
                 <span
                   class="css-1nvf5u9"
@@ -591,23 +976,452 @@ exports[`<Home/> > should render succesfully 1`] = `
                 class="chakra-text css-0"
               >
                 Climate: 
-                temperate, arid, windy
+                temperate
               </p>
               <p
                 class="chakra-text css-0"
               >
                 Terrain: 
-                scrublands, savanna, canyons, sinkholes
+                grasslands, mountains
               </p>
               <p
                 class="chakra-text css-0"
               >
-                Population: 
-                95000000
+                Habitants: 
+                2000000000
+              </p>
+            </div>
+          </a>
+          <a
+            class="chakra-card css-ska63g"
+            data-testid="planet-card"
+            href="/3"
+          >
+            <div
+              class="css-upfzb1"
+            >
+              <div
+                class="planet css-wb6ec1"
+              />
+            </div>
+            <div
+              class="cardDetails css-1weapz6"
+            >
+              <h3
+                class="chakra-heading css-1hna34j"
+              >
+                Yavin IV
+              </h3>
+              <p
+                class="chakra-text css-0"
+              >
+                Diameter: 
+                10200
+                 
+                <span
+                  class="css-1nvf5u9"
+                >
+                  km
+                </span>
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Climate: 
+                temperate, tropical
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Terrain: 
+                jungle, rainforests
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Habitants: 
+                1000
+              </p>
+            </div>
+          </a>
+          <a
+            class="chakra-card css-ska63g"
+            data-testid="planet-card"
+            href="/4"
+          >
+            <div
+              class="css-upfzb1"
+            >
+              <div
+                class="planet css-kpj6g7"
+              />
+            </div>
+            <div
+              class="cardDetails css-1weapz6"
+            >
+              <h3
+                class="chakra-heading css-1hna34j"
+              >
+                Hoth
+              </h3>
+              <p
+                class="chakra-text css-0"
+              >
+                Diameter: 
+                7200
+                 
+                <span
+                  class="css-1nvf5u9"
+                >
+                  km
+                </span>
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Climate: 
+                frozen
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Terrain: 
+                tundra, ice caves, mountain ranges
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Habitants: 
+                unknown
+              </p>
+            </div>
+          </a>
+          <a
+            class="chakra-card css-ska63g"
+            data-testid="planet-card"
+            href="/5"
+          >
+            <div
+              class="css-upfzb1"
+            >
+              <div
+                class="planet css-h5yfgu"
+              />
+            </div>
+            <div
+              class="cardDetails css-1weapz6"
+            >
+              <h3
+                class="chakra-heading css-1hna34j"
+              >
+                Dagobah
+              </h3>
+              <p
+                class="chakra-text css-0"
+              >
+                Diameter: 
+                8900
+                 
+                <span
+                  class="css-1nvf5u9"
+                >
+                  km
+                </span>
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Climate: 
+                murky
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Terrain: 
+                swamp, jungles
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Habitants: 
+                unknown
+              </p>
+            </div>
+          </a>
+          <a
+            class="chakra-card css-ska63g"
+            data-testid="planet-card"
+            href="/6"
+          >
+            <div
+              class="css-upfzb1"
+            >
+              <div
+                class="planet css-x46186"
+              />
+            </div>
+            <div
+              class="cardDetails css-1weapz6"
+            >
+              <h3
+                class="chakra-heading css-1hna34j"
+              >
+                Bespin
+              </h3>
+              <p
+                class="chakra-text css-0"
+              >
+                Diameter: 
+                118000
+                 
+                <span
+                  class="css-1nvf5u9"
+                >
+                  km
+                </span>
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Climate: 
+                temperate
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Terrain: 
+                gas giant
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Habitants: 
+                6000000
+              </p>
+            </div>
+          </a>
+          <a
+            class="chakra-card css-ska63g"
+            data-testid="planet-card"
+            href="/7"
+          >
+            <div
+              class="css-upfzb1"
+            >
+              <div
+                class="planet css-1k7y21q"
+              />
+            </div>
+            <div
+              class="cardDetails css-1weapz6"
+            >
+              <h3
+                class="chakra-heading css-1hna34j"
+              >
+                Endor
+              </h3>
+              <p
+                class="chakra-text css-0"
+              >
+                Diameter: 
+                4900
+                 
+                <span
+                  class="css-1nvf5u9"
+                >
+                  km
+                </span>
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Climate: 
+                temperate
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Terrain: 
+                forests, mountains, lakes
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Habitants: 
+                30000000
+              </p>
+            </div>
+          </a>
+          <a
+            class="chakra-card css-ska63g"
+            data-testid="planet-card"
+            href="/8"
+          >
+            <div
+              class="css-upfzb1"
+            >
+              <div
+                class="planet css-1a189rz"
+              />
+            </div>
+            <div
+              class="cardDetails css-1weapz6"
+            >
+              <h3
+                class="chakra-heading css-1hna34j"
+              >
+                Naboo
+              </h3>
+              <p
+                class="chakra-text css-0"
+              >
+                Diameter: 
+                12120
+                 
+                <span
+                  class="css-1nvf5u9"
+                >
+                  km
+                </span>
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Climate: 
+                temperate
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Terrain: 
+                grassy hills, swamps, forests, mountains
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Habitants: 
+                4500000000
+              </p>
+            </div>
+          </a>
+          <a
+            class="chakra-card css-ska63g"
+            data-testid="planet-card"
+            href="/9"
+          >
+            <div
+              class="css-upfzb1"
+            >
+              <div
+                class="planet css-17c27uo"
+              />
+            </div>
+            <div
+              class="cardDetails css-1weapz6"
+            >
+              <h3
+                class="chakra-heading css-1hna34j"
+              >
+                Coruscant
+              </h3>
+              <p
+                class="chakra-text css-0"
+              >
+                Diameter: 
+                12240
+                 
+                <span
+                  class="css-1nvf5u9"
+                >
+                  km
+                </span>
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Climate: 
+                temperate
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Terrain: 
+                cityscape, mountains
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Habitants: 
+                1000000000000
+              </p>
+            </div>
+          </a>
+          <a
+            class="chakra-card css-ska63g"
+            data-testid="planet-card"
+            href="/10"
+          >
+            <div
+              class="css-upfzb1"
+            >
+              <div
+                class="planet css-1uif6ec"
+              />
+            </div>
+            <div
+              class="cardDetails css-1weapz6"
+            >
+              <h3
+                class="chakra-heading css-1hna34j"
+              >
+                Kamino
+              </h3>
+              <p
+                class="chakra-text css-0"
+              >
+                Diameter: 
+                19720
+                 
+                <span
+                  class="css-1nvf5u9"
+                >
+                  km
+                </span>
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Climate: 
+                temperate
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Terrain: 
+                ocean
+              </p>
+              <p
+                class="chakra-text css-0"
+              >
+                Habitants: 
+                1000000000
               </p>
             </div>
           </a>
         </div>
+        <button
+          class="chakra-button css-1bvqs64"
+          disabled=""
+          type="button"
+        >
+          Prev
+        </button>
+        <button
+          class="chakra-button css-1af772r"
+          type="button"
+        >
+          Next
+        </button>
       </section>
     </div>
     <span

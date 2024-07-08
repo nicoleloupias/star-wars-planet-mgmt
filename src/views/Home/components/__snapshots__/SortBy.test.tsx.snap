@@ -42,7 +42,7 @@ exports[`<SortBy/> > should render succesfully 1`] = `
           <option
             value="population"
           >
-            Population
+            Habitants
           </option>
         </select>
         <div
@@ -151,7 +151,7 @@ exports[`<SortBy/> > should render succesfully 1`] = `
         <option
           value="population"
         >
-          Population
+          Habitants
         </option>
       </select>
       <div

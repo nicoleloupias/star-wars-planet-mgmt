@@ -21,7 +21,7 @@ exports[`<PlanetDetails /> > should render succesfully 1`] = `
           class="css-15h2xf5"
         >
           <div
-            class="css-pg68t7"
+            class="css-kihu5s"
           >
             <h2
               class="chakra-heading css-q8veze"
@@ -31,7 +31,7 @@ exports[`<PlanetDetails /> > should render succesfully 1`] = `
             </h2>
           </div>
           <div
-            class="css-17n3uhj"
+            class="css-rtw255"
           >
             <p
               class="chakra-text css-0"
@@ -60,7 +60,7 @@ exports[`<PlanetDetails /> > should render succesfully 1`] = `
             <p
               class="chakra-text css-0"
             >
-              Population: 
+              Habitants: 
               100000000000
             </p>
             <div
@@ -206,7 +206,7 @@ exports[`<PlanetDetails /> > should render succesfully 1`] = `
         class="css-15h2xf5"
       >
         <div
-          class="css-pg68t7"
+          class="css-kihu5s"
         >
           <h2
             class="chakra-heading css-q8veze"
@@ -216,7 +216,7 @@ exports[`<PlanetDetails /> > should render succesfully 1`] = `
           </h2>
         </div>
         <div
-          class="css-17n3uhj"
+          class="css-rtw255"
         >
           <p
             class="chakra-text css-0"
@@ -245,7 +245,7 @@ exports[`<PlanetDetails /> > should render succesfully 1`] = `
           <p
             class="chakra-text css-0"
           >
-            Population: 
+            Habitants: 
             100000000000
           </p>
           <div

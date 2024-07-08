@@ -18,7 +18,7 @@ describe("<CreatePlanet/>", () => {
     act(() => {
       fireEvent.change(component.getByRole("textbox", { name: "Name" }), { target: { value: "Cool planet" } });
       fireEvent.change(component.getByRole("textbox", { name: "Climate" }), { target: { value: "Hot" } });
-      fireEvent.change(component.getByRole("spinbutton", { name: "Population" }), { target: { value: "1000" } });
+      fireEvent.change(component.getByRole("spinbutton", { name: "Habitants" }), { target: { value: "1000" } });
       fireEvent.change(component.getByRole("textbox", { name: "Terrain" }), { target: { value: "Terrain" } });
       fireEvent.change(component.getByRole("spinbutton", { name: "Diameter (km)" }), { target: { value: "150" } });
     });

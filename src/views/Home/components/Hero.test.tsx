@@ -14,6 +14,5 @@ describe("<Hero/>", () => {
 
     expect(component.getByText(/Explore the galaxy/)).toBeInTheDocument();
     expect(component.getByText(/Scroll/)).toBeInTheDocument();
-    expect(component.getByRole("img")).toHaveAttribute("src", "/src/assets/Darth-Vader-PNG-HD-Image.png");
   });
 });

@@ -5,7 +5,9 @@ import stars from "../../../assets/stars.png";
 import { getRandomPlanetColor } from "../../../utils/planet";
 import type { Planet } from "../../../hooks/usePlanetsStore";
 
-export interface PlanetCardProps extends Omit<FlexProps, "id">, Planet {}
+export interface PlanetCardProps
+  extends Omit<FlexProps, "id">,
+    Pick<Planet, "name" | "climate" | "diameter" | "terrain" | "population" | "id"> {}
 
 export const PlanetCard = ({ id, name, diameter, climate, terrain, population, ...props }: PlanetCardProps) => {
   const planetColor = getRandomPlanetColor(name);
@@ -26,7 +28,7 @@ export const PlanetCard = ({ id, name, diameter, climate, terrain, population, .
       to={`/${id}`}
       w={80}
       h={420}
-      borderRadius={12}
+      borderRadius={30}
       overflow="hidden"
       bgColor="transparent"
       _hover={{
@@ -66,7 +68,9 @@ export const PlanetCard = ({ id, name, diameter, climate, terrain, population, .
         className="cardDetails"
         textTransform="capitalize"
       >
-        <Heading color="gray.50">{name}</Heading>
+        <Heading color="gray.50" as="h3" fontWeight={"800"}>
+          {name}
+        </Heading>
         <Text>
           Diameter: {diameter}{" "}
           {diameter !== "unknown" && (
@@ -77,7 +81,7 @@ export const PlanetCard = ({ id, name, diameter, climate, terrain, population, .
         </Text>
         <Text>Climate: {climate}</Text>
         <Text>Terrain: {terrain}</Text>
-        <Text>Population: {population}</Text>
+        <Text>Habitants: {population}</Text>
       </Box>
     </Card>
   );
