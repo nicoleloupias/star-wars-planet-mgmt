@@ -1,4 +1,12 @@
-import { FormControl, FormErrorMessage, FormLabel, Input, InputProps } from "@chakra-ui/react";
+import {
+  FormControl,
+  FormErrorMessage,
+  FormLabel,
+  Input,
+  InputGroup,
+  InputProps,
+  InputRightElement
+} from "@chakra-ui/react";
 import { Control, FieldValues, UseControllerProps, useController } from "react-hook-form";
 
 export interface InputControllerProps<T extends FieldValues> extends InputProps {
@@ -6,12 +14,14 @@ export interface InputControllerProps<T extends FieldValues> extends InputProps 
   control: Control<T>;
   label: string;
   rules?: Record<string, unknown>;
+  iconRight?: React.ReactElement;
 }
 export const InputController = <T extends FieldValues>({
   id,
   control,
   label,
   rules,
+  iconRight,
   ...props
 }: InputControllerProps<T>) => {
   const { field, fieldState } = useController<T>({
@@ -25,7 +35,11 @@ export const InputController = <T extends FieldValues>({
   return (
     <FormControl isInvalid={fieldState.invalid}>
       <FormLabel htmlFor={id}>{label}</FormLabel>
-      <Input data-testid={id} id={id} placeholder={label} {...field} {...props} />
+      <InputGroup>
+        <Input data-testid={id} id={id} placeholder={label} {...field} value={field.value || ""} {...props} />
+
+        <InputRightElement>{iconRight}</InputRightElement>
+      </InputGroup>
       <FormErrorMessage>{errorMessage}</FormErrorMessage>
     </FormControl>
   );

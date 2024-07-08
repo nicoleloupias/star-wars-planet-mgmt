@@ -8,17 +8,17 @@ export interface Planet extends RawPlanet {
 
 interface PlanetStore {
   planets?: Planet[];
-  setPlanets: (planets: Planet[]) => void;
+  setPlanets: (planets: RawPlanet[]) => void;
   addPlanet: (planet: Planet) => void;
   editPlanet: (id: string, data: Planet) => void;
   removePlanet: (id: string) => void;
 }
 
-export const usePlanetsStore = create<PlanetStore>((set, get) => ({
+export const usePlanetsStore = create<PlanetStore>((set) => ({
   planets: undefined,
   setPlanets: (planets) => {
     return set((state) => {
-      const transformedPlanets = planets.map((planet) => ({
+      const transformedPlanets: Planet[] = planets.map((planet) => ({
         ...planet,
         id: getPlanetId(planet.url)
       }));

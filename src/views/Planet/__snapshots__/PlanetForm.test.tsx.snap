@@ -21,14 +21,22 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
           >
             Name
           </label>
-          <input
-            class="chakra-input css-qcorp"
-            data-testid="name"
-            id="name"
-            name="name"
-            placeholder="Name"
-            value=""
-          />
+          <div
+            class="chakra-input__group css-1y0e7gb"
+            data-group="true"
+          >
+            <input
+              class="chakra-input css-1rrwde8"
+              data-testid="name"
+              id="name"
+              name="name"
+              placeholder="Name"
+              value=""
+            />
+            <div
+              class="chakra-input__right-element css-1lds0jh"
+            />
+          </div>
         </div>
         <div
           class="chakra-form-control css-1kxonj9"
@@ -41,15 +49,23 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
           >
             Diameter
           </label>
-          <input
-            class="chakra-input css-qcorp"
-            data-testid="diameter"
-            id="diameter"
-            name="diameter"
-            placeholder="Diameter"
-            type="number"
-            value=""
-          />
+          <div
+            class="chakra-input__group css-1y0e7gb"
+            data-group="true"
+          >
+            <input
+              class="chakra-input css-1rrwde8"
+              data-testid="diameter"
+              id="diameter"
+              name="diameter"
+              placeholder="Diameter"
+              type="number"
+              value=""
+            />
+            <div
+              class="chakra-input__right-element css-1lds0jh"
+            />
+          </div>
         </div>
         <div
           class="chakra-form-control css-1kxonj9"
@@ -62,15 +78,23 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
           >
             Population
           </label>
-          <input
-            class="chakra-input css-qcorp"
-            data-testid="population"
-            id="population"
-            name="population"
-            placeholder="Population"
-            type="number"
-            value=""
-          />
+          <div
+            class="chakra-input__group css-1y0e7gb"
+            data-group="true"
+          >
+            <input
+              class="chakra-input css-1rrwde8"
+              data-testid="population"
+              id="population"
+              name="population"
+              placeholder="Population"
+              type="number"
+              value=""
+            />
+            <div
+              class="chakra-input__right-element css-1lds0jh"
+            />
+          </div>
         </div>
         <div
           class="chakra-form-control css-1kxonj9"
@@ -83,14 +107,22 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
           >
             Climate
           </label>
-          <input
-            class="chakra-input css-qcorp"
-            data-testid="climate"
-            id="climate"
-            name="climate"
-            placeholder="Climate"
-            value=""
-          />
+          <div
+            class="chakra-input__group css-1y0e7gb"
+            data-group="true"
+          >
+            <input
+              class="chakra-input css-1rrwde8"
+              data-testid="climate"
+              id="climate"
+              name="climate"
+              placeholder="Climate"
+              value=""
+            />
+            <div
+              class="chakra-input__right-element css-1lds0jh"
+            />
+          </div>
         </div>
         <div
           class="chakra-form-control css-1kxonj9"
@@ -103,14 +135,22 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
           >
             Terrain
           </label>
-          <input
-            class="chakra-input css-qcorp"
-            data-testid="terrain"
-            id="terrain"
-            name="terrain"
-            placeholder="Terrain"
-            value=""
-          />
+          <div
+            class="chakra-input__group css-1y0e7gb"
+            data-group="true"
+          >
+            <input
+              class="chakra-input css-1rrwde8"
+              data-testid="terrain"
+              id="terrain"
+              name="terrain"
+              placeholder="Terrain"
+              value=""
+            />
+            <div
+              class="chakra-input__right-element css-1lds0jh"
+            />
+          </div>
         </div>
         <div
           class="css-u8chpe"
@@ -197,14 +237,22 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
         >
           Name
         </label>
-        <input
-          class="chakra-input css-qcorp"
-          data-testid="name"
-          id="name"
-          name="name"
-          placeholder="Name"
-          value=""
-        />
+        <div
+          class="chakra-input__group css-1y0e7gb"
+          data-group="true"
+        >
+          <input
+            class="chakra-input css-1rrwde8"
+            data-testid="name"
+            id="name"
+            name="name"
+            placeholder="Name"
+            value=""
+          />
+          <div
+            class="chakra-input__right-element css-1lds0jh"
+          />
+        </div>
       </div>
       <div
         class="chakra-form-control css-1kxonj9"
@@ -217,15 +265,23 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
         >
           Diameter
         </label>
-        <input
-          class="chakra-input css-qcorp"
-          data-testid="diameter"
-          id="diameter"
-          name="diameter"
-          placeholder="Diameter"
-          type="number"
-          value=""
-        />
+        <div
+          class="chakra-input__group css-1y0e7gb"
+          data-group="true"
+        >
+          <input
+            class="chakra-input css-1rrwde8"
+            data-testid="diameter"
+            id="diameter"
+            name="diameter"
+            placeholder="Diameter"
+            type="number"
+            value=""
+          />
+          <div
+            class="chakra-input__right-element css-1lds0jh"
+          />
+        </div>
       </div>
       <div
         class="chakra-form-control css-1kxonj9"
@@ -238,15 +294,23 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
         >
           Population
         </label>
-        <input
-          class="chakra-input css-qcorp"
-          data-testid="population"
-          id="population"
-          name="population"
-          placeholder="Population"
-          type="number"
-          value=""
-        />
+        <div
+          class="chakra-input__group css-1y0e7gb"
+          data-group="true"
+        >
+          <input
+            class="chakra-input css-1rrwde8"
+            data-testid="population"
+            id="population"
+            name="population"
+            placeholder="Population"
+            type="number"
+            value=""
+          />
+          <div
+            class="chakra-input__right-element css-1lds0jh"
+          />
+        </div>
       </div>
       <div
         class="chakra-form-control css-1kxonj9"
@@ -259,14 +323,22 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
         >
           Climate
         </label>
-        <input
-          class="chakra-input css-qcorp"
-          data-testid="climate"
-          id="climate"
-          name="climate"
-          placeholder="Climate"
-          value=""
-        />
+        <div
+          class="chakra-input__group css-1y0e7gb"
+          data-group="true"
+        >
+          <input
+            class="chakra-input css-1rrwde8"
+            data-testid="climate"
+            id="climate"
+            name="climate"
+            placeholder="Climate"
+            value=""
+          />
+          <div
+            class="chakra-input__right-element css-1lds0jh"
+          />
+        </div>
       </div>
       <div
         class="chakra-form-control css-1kxonj9"
@@ -279,14 +351,22 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
         >
           Terrain
         </label>
-        <input
-          class="chakra-input css-qcorp"
-          data-testid="terrain"
-          id="terrain"
-          name="terrain"
-          placeholder="Terrain"
-          value=""
-        />
+        <div
+          class="chakra-input__group css-1y0e7gb"
+          data-group="true"
+        >
+          <input
+            class="chakra-input css-1rrwde8"
+            data-testid="terrain"
+            id="terrain"
+            name="terrain"
+            placeholder="Terrain"
+            value=""
+          />
+          <div
+            class="chakra-input__right-element css-1lds0jh"
+          />
+        </div>
       </div>
       <div
         class="css-u8chpe"

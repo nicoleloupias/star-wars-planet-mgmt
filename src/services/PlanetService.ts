@@ -1,7 +1,8 @@
 import { axiosInstance } from "./";
+import { RawPlanet } from "./types/Planet";
 
 class Service {
-  async getAll() {
+  async getAll(): Promise<RawPlanet[] | undefined> {
     try {
       const response = await Promise.all(
         Array.from(Array(6)).map((_, i) => axiosInstance.get(`/planets/?page=${i + 1}`))

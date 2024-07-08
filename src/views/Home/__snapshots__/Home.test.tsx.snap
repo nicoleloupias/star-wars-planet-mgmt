@@ -32,10 +32,318 @@ exports[`<Home/> > should render succesfully 1`] = `
         />
       </div>
       <div
-        class="css-gmuwbf"
+        class="css-b93e9j"
       >
         <div
-          class="css-14t6s4r"
+          class="css-1bb2txy"
+        >
+          <form
+            class="css-1blwbva"
+          >
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
+            >
+              <label
+                class="chakra-form__label css-g6pte"
+                for="search"
+                id="field-:r0:-label"
+              >
+                Search
+              </label>
+              <div
+                class="chakra-input__group css-1y0e7gb"
+                data-group="true"
+              >
+                <input
+                  class="chakra-input css-1rrwde8"
+                  data-testid="search"
+                  id="search"
+                  name="search"
+                  placeholder="Search"
+                  value=""
+                />
+                <div
+                  class="chakra-input__right-element css-1lds0jh"
+                >
+                  <div
+                    class="css-1rs9p06"
+                  >
+                    <button
+                      aria-label="Search"
+                      class="chakra-button css-1ni11ii"
+                      type="submit"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="chakra-icon css-onkibi"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M23.384,21.619,16.855,15.09a9.284,9.284,0,1,0-1.768,1.768l6.529,6.529a1.266,1.266,0,0,0,1.768,0A1.251,1.251,0,0,0,23.384,21.619ZM2.75,9.5a6.75,6.75,0,1,1,6.75,6.75A6.758,6.758,0,0,1,2.75,9.5Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div
+            class="css-1apmbyb"
+          >
+            <a
+              class="chakra-card css-1olgpje"
+              created="2014-12-10T12:47:22.350000Z"
+              data-testid="planet-card"
+              edited="2014-12-20T20:58:18.437000Z"
+              films="https://swapi.dev/api/films/5/"
+              gravity="0.9 standard"
+              href="/11"
+              orbital_period="256"
+              residents="https://swapi.dev/api/people/63/"
+              rotation_period="30"
+              surface_water="5"
+            >
+              <div
+                class="css-upfzb1"
+              >
+                <div
+                  class="planet css-17ii5le"
+                />
+              </div>
+              <div
+                class="cardDetails css-vk61ae"
+              >
+                <h2
+                  class="chakra-heading css-q8veze"
+                >
+                  Geonosis
+                </h2>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Diameter: 
+                  11370
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Climate: 
+                  temperate, arid
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Terrain: 
+                  rock, desert, mountain, barren
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Population: 
+                  100000000000
+                </p>
+              </div>
+            </a>
+            <a
+              class="chakra-card css-1olgpje"
+              created="2014-12-10T12:49:01.491000Z"
+              data-testid="planet-card"
+              edited="2014-12-20T20:58:18.439000Z"
+              films="https://swapi.dev/api/films/6/"
+              gravity="1 standard"
+              href="/12"
+              orbital_period="351"
+              residents="https://swapi.dev/api/people/83/"
+              rotation_period="27"
+              surface_water="0.9"
+            >
+              <div
+                class="css-upfzb1"
+              >
+                <div
+                  class="planet css-1mm42zb"
+                />
+              </div>
+              <div
+                class="cardDetails css-vk61ae"
+              >
+                <h2
+                  class="chakra-heading css-q8veze"
+                >
+                  Utapau
+                </h2>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Diameter: 
+                  12900
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Climate: 
+                  temperate, arid, windy
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Terrain: 
+                  scrublands, savanna, canyons, sinkholes
+                </p>
+                <p
+                  class="chakra-text css-0"
+                >
+                  Population: 
+                  95000000
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <span
+        hidden=""
+        id="__chakra_env"
+      />
+    </div>
+    <div
+      class="chakra-portal"
+    >
+      <div
+        aria-label="Notifications-top"
+        aria-live="polite"
+        id="chakra-toast-manager-top"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+      />
+      <div
+        aria-label="Notifications-top-left"
+        aria-live="polite"
+        id="chakra-toast-manager-top-left"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <div
+        aria-label="Notifications-top-right"
+        aria-live="polite"
+        id="chakra-toast-manager-top-right"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <div
+        aria-label="Notifications-bottom-left"
+        aria-live="polite"
+        id="chakra-toast-manager-bottom-left"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <div
+        aria-label="Notifications-bottom"
+        aria-live="polite"
+        id="chakra-toast-manager-bottom"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+      />
+      <div
+        aria-label="Notifications-bottom-right"
+        aria-live="polite"
+        id="chakra-toast-manager-bottom-right"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"
+      />
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="css-1lbat96"
+    >
+      <div
+        class="css-ybip2u"
+      />
+      <h2
+        class="chakra-heading css-s2chw8"
+      >
+        Explore the galaxy
+      </h2>
+      <div
+        class="css-1etnvhi"
+      />
+      <p
+        class="chakra-text css-1is01ss"
+      >
+        Scroll
+      </p>
+      <img
+        class="chakra-image css-odqkwc"
+        src="/src/assets/Darth-Vader-PNG-HD-Image.png"
+      />
+    </div>
+    <div
+      class="css-b93e9j"
+    >
+      <div
+        class="css-1bb2txy"
+      >
+        <form
+          class="css-1blwbva"
+        >
+          <div
+            class="chakra-form-control css-1kxonj9"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-g6pte"
+              for="search"
+              id="field-:r0:-label"
+            >
+              Search
+            </label>
+            <div
+              class="chakra-input__group css-1y0e7gb"
+              data-group="true"
+            >
+              <input
+                class="chakra-input css-1rrwde8"
+                data-testid="search"
+                id="search"
+                name="search"
+                placeholder="Search"
+                value=""
+              />
+              <div
+                class="chakra-input__right-element css-1lds0jh"
+              >
+                <div
+                  class="css-1rs9p06"
+                >
+                  <button
+                    aria-label="Search"
+                    class="chakra-button css-1ni11ii"
+                    type="submit"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="chakra-icon css-onkibi"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M23.384,21.619,16.855,15.09a9.284,9.284,0,1,0-1.768,1.768l6.529,6.529a1.266,1.266,0,0,0,1.768,0A1.251,1.251,0,0,0,23.384,21.619ZM2.75,9.5a6.75,6.75,0,1,1,6.75,6.75A6.758,6.758,0,0,1,2.75,9.5Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div
+          class="css-1apmbyb"
         >
           <a
             class="chakra-card css-1olgpje"
@@ -146,198 +454,6 @@ exports[`<Home/> > should render succesfully 1`] = `
             </div>
           </a>
         </div>
-      </div>
-      <span
-        hidden=""
-        id="__chakra_env"
-      />
-    </div>
-    <div
-      class="chakra-portal"
-    >
-      <div
-        aria-label="Notifications-top"
-        aria-live="polite"
-        id="chakra-toast-manager-top"
-        role="region"
-        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
-      />
-      <div
-        aria-label="Notifications-top-left"
-        aria-live="polite"
-        id="chakra-toast-manager-top-left"
-        role="region"
-        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"
-      />
-      <div
-        aria-label="Notifications-top-right"
-        aria-live="polite"
-        id="chakra-toast-manager-top-right"
-        role="region"
-        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"
-      />
-      <div
-        aria-label="Notifications-bottom-left"
-        aria-live="polite"
-        id="chakra-toast-manager-bottom-left"
-        role="region"
-        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"
-      />
-      <div
-        aria-label="Notifications-bottom"
-        aria-live="polite"
-        id="chakra-toast-manager-bottom"
-        role="region"
-        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
-      />
-      <div
-        aria-label="Notifications-bottom-right"
-        aria-live="polite"
-        id="chakra-toast-manager-bottom-right"
-        role="region"
-        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"
-      />
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="css-1lbat96"
-    >
-      <div
-        class="css-ybip2u"
-      />
-      <h2
-        class="chakra-heading css-s2chw8"
-      >
-        Explore the galaxy
-      </h2>
-      <div
-        class="css-1etnvhi"
-      />
-      <p
-        class="chakra-text css-1is01ss"
-      >
-        Scroll
-      </p>
-      <img
-        class="chakra-image css-odqkwc"
-        src="/src/assets/Darth-Vader-PNG-HD-Image.png"
-      />
-    </div>
-    <div
-      class="css-gmuwbf"
-    >
-      <div
-        class="css-14t6s4r"
-      >
-        <a
-          class="chakra-card css-1olgpje"
-          created="2014-12-10T12:47:22.350000Z"
-          data-testid="planet-card"
-          edited="2014-12-20T20:58:18.437000Z"
-          films="https://swapi.dev/api/films/5/"
-          gravity="0.9 standard"
-          href="/11"
-          orbital_period="256"
-          residents="https://swapi.dev/api/people/63/"
-          rotation_period="30"
-          surface_water="5"
-        >
-          <div
-            class="css-upfzb1"
-          >
-            <div
-              class="planet css-17ii5le"
-            />
-          </div>
-          <div
-            class="cardDetails css-vk61ae"
-          >
-            <h2
-              class="chakra-heading css-q8veze"
-            >
-              Geonosis
-            </h2>
-            <p
-              class="chakra-text css-0"
-            >
-              Diameter: 
-              11370
-            </p>
-            <p
-              class="chakra-text css-0"
-            >
-              Climate: 
-              temperate, arid
-            </p>
-            <p
-              class="chakra-text css-0"
-            >
-              Terrain: 
-              rock, desert, mountain, barren
-            </p>
-            <p
-              class="chakra-text css-0"
-            >
-              Population: 
-              100000000000
-            </p>
-          </div>
-        </a>
-        <a
-          class="chakra-card css-1olgpje"
-          created="2014-12-10T12:49:01.491000Z"
-          data-testid="planet-card"
-          edited="2014-12-20T20:58:18.439000Z"
-          films="https://swapi.dev/api/films/6/"
-          gravity="1 standard"
-          href="/12"
-          orbital_period="351"
-          residents="https://swapi.dev/api/people/83/"
-          rotation_period="27"
-          surface_water="0.9"
-        >
-          <div
-            class="css-upfzb1"
-          >
-            <div
-              class="planet css-1mm42zb"
-            />
-          </div>
-          <div
-            class="cardDetails css-vk61ae"
-          >
-            <h2
-              class="chakra-heading css-q8veze"
-            >
-              Utapau
-            </h2>
-            <p
-              class="chakra-text css-0"
-            >
-              Diameter: 
-              12900
-            </p>
-            <p
-              class="chakra-text css-0"
-            >
-              Climate: 
-              temperate, arid, windy
-            </p>
-            <p
-              class="chakra-text css-0"
-            >
-              Terrain: 
-              scrublands, savanna, canyons, sinkholes
-            </p>
-            <p
-              class="chakra-text css-0"
-            >
-              Population: 
-              95000000
-            </p>
-          </div>
-        </a>
       </div>
     </div>
     <span

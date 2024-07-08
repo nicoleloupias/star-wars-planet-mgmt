@@ -59,7 +59,15 @@ export const PlanetForm = ({ onSubmit, confirmText }: PlanetFormProps) => {
         >
           Cancel
         </Button>
-        <Button variant="primary" type="submit" onClick={onSubmit} isDisabled={!formState.isValid}>
+        <Button
+          variant="primary"
+          type="submit"
+          onClick={(e) => {
+            e.preventDefault();
+            onSubmit();
+          }}
+          isDisabled={!formState.isValid}
+        >
           {confirmText}
         </Button>
       </Flex>

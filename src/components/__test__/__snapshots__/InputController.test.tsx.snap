@@ -18,14 +18,22 @@ exports[`<InputController/> > should render correctly 1`] = `
         >
           Name
         </label>
-        <input
-          class="chakra-input css-qcorp"
-          data-testid="name"
-          id="name"
-          name="name"
-          placeholder="Name"
-          value=""
-        />
+        <div
+          class="chakra-input__group css-1y0e7gb"
+          data-group="true"
+        >
+          <input
+            class="chakra-input css-1rrwde8"
+            data-testid="name"
+            id="name"
+            name="name"
+            placeholder="Name"
+            value=""
+          />
+          <div
+            class="chakra-input__right-element css-1lds0jh"
+          />
+        </div>
       </div>
       <span
         hidden=""
@@ -91,14 +99,22 @@ exports[`<InputController/> > should render correctly 1`] = `
       >
         Name
       </label>
-      <input
-        class="chakra-input css-qcorp"
-        data-testid="name"
-        id="name"
-        name="name"
-        placeholder="Name"
-        value=""
-      />
+      <div
+        class="chakra-input__group css-1y0e7gb"
+        data-group="true"
+      >
+        <input
+          class="chakra-input css-1rrwde8"
+          data-testid="name"
+          id="name"
+          name="name"
+          placeholder="Name"
+          value=""
+        />
+        <div
+          class="chakra-input__right-element css-1lds0jh"
+        />
+      </div>
     </div>
     <span
       hidden=""
@@ -179,16 +195,24 @@ exports[`<InputController/> > should show error > Invalid 1`] = `
         >
           Name
         </label>
-        <input
-          aria-describedby="field-:r1:-feedback"
-          aria-invalid="true"
-          class="chakra-input css-qcorp"
-          data-testid="name"
-          id="name"
-          name="name"
-          placeholder="Name"
-          value=""
-        />
+        <div
+          class="chakra-input__group css-1y0e7gb"
+          data-group="true"
+        >
+          <input
+            aria-describedby="field-:r1:-feedback"
+            aria-invalid="true"
+            class="chakra-input css-1rrwde8"
+            data-testid="name"
+            id="name"
+            name="name"
+            placeholder="Name"
+            value=""
+          />
+          <div
+            class="chakra-input__right-element css-1lds0jh"
+          />
+        </div>
         <div
           aria-live="polite"
           class="chakra-form__error-message css-502kp3"
@@ -263,16 +287,24 @@ exports[`<InputController/> > should show error > Invalid 1`] = `
       >
         Name
       </label>
-      <input
-        aria-describedby="field-:r1:-feedback"
-        aria-invalid="true"
-        class="chakra-input css-qcorp"
-        data-testid="name"
-        id="name"
-        name="name"
-        placeholder="Name"
-        value=""
-      />
+      <div
+        class="chakra-input__group css-1y0e7gb"
+        data-group="true"
+      >
+        <input
+          aria-describedby="field-:r1:-feedback"
+          aria-invalid="true"
+          class="chakra-input css-1rrwde8"
+          data-testid="name"
+          id="name"
+          name="name"
+          placeholder="Name"
+          value=""
+        />
+        <div
+          class="chakra-input__right-element css-1lds0jh"
+        />
+      </div>
       <div
         aria-live="polite"
         class="chakra-form__error-message css-502kp3"
