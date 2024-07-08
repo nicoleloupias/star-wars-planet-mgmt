@@ -1,6 +1,6 @@
 # Planet Management System
-![ezgif-1-d0b4288954](https://github.com/nicoleloupias/star-wars-planet-mgmt/assets/57961143/5745254f-b654-468d-88a9-bdca51e11ee2)
 
+![ezgif-1-d0b4288954](https://github.com/nicoleloupias/star-wars-planet-mgmt/assets/57961143/5745254f-b654-468d-88a9-bdca51e11ee2)
 
 ## Table of Contents
 
@@ -17,6 +17,8 @@
 ## About
 
 The Planet Management System is a React application developed using Vite and TypeScript. This application allows users to manage and explore different planets of Star Wars world easily.
+
+You can see it live [here](https://star-wars-planet-mgmt.netlify.app/)
 
 ## Features
 

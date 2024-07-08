@@ -15,7 +15,7 @@ describe("<SearchBar/>", () => {
       criteriaMode: "all"
     });
 
-    return <SearchBar form={localForm} setPlanetsToShow={setPlanetsToShow} />;
+    return <SearchBar form={localForm} setPlanetsToShow={setPlanetsToShow} setPage={vi.fn()} />;
   };
   const factoryComponent = () => render(<RenderWithForm />);
 

@@ -9,9 +9,10 @@ import type { FormFieldValues } from "../Home";
 export interface SearchBarProps {
   setPlanetsToShow: React.Dispatch<React.SetStateAction<Planet[] | undefined>>;
   form: UseFormReturn<FormFieldValues>;
+  setPage: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export const SearchBar = ({ form, setPlanetsToShow }: SearchBarProps) => {
+export const SearchBar = ({ form, setPlanetsToShow, setPage }: SearchBarProps) => {
   const { watch, control, resetField } = form;
   const planets = usePlanetsStore((state) => state.planets);
   const searchValue = watch("search");
@@ -30,6 +31,7 @@ export const SearchBar = ({ form, setPlanetsToShow }: SearchBarProps) => {
     });
 
     setPlanetsToShow(result);
+    setPage(0);
   };
 
   const handleResetSearch = () => {

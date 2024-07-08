@@ -17,7 +17,14 @@ export interface FormFieldValues {
 export const Home = () => {
   const planets = usePlanetsStore((state) => state.planets);
   const [planetsToShow, setPlanetsToShow] = useState<Planet[] | undefined>();
-  const { data: paginatedPlanets, onNextPage, onPrevPage, hasPrevPage, hasNextPage } = usePagination(planetsToShow);
+  const {
+    data: paginatedPlanets,
+    onNextPage,
+    onPrevPage,
+    hasPrevPage,
+    hasNextPage,
+    setPage
+  } = usePagination(planetsToShow);
   const form = useForm<FormFieldValues>();
 
   useEffect(() => {
@@ -32,7 +39,7 @@ export const Home = () => {
       <Center flexDir="column">
         <Box as="section" minW={{ lg: "1040px" }} my={10}>
           <Flex as="form" gap={2} justifyItems="flex-start" flexDir={{ base: "column", lg: "row" }}>
-            <SearchBar setPlanetsToShow={setPlanetsToShow} form={form} />
+            <SearchBar setPlanetsToShow={setPlanetsToShow} setPage={setPage} form={form} />
             <SortBy setPlanetsToShow={setPlanetsToShow} planetsToShow={planetsToShow} form={form} />
           </Flex>
 

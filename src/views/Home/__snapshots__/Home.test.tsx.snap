@@ -23,8 +23,8 @@ exports[`<Home/> > should render succesfully 1`] = `
           class="css-1etnvhi"
         />
         <p
-          class="chakra-text css-1kyjpe6"
-          style="transform: translateY(-10px) translateZ(0);"
+          class="chakra-text css-wj0v3a"
+          style="transform: translateX(-50%) translateY(-10px) translateZ(0);"
         >
           Scroll
           <svg
@@ -760,8 +760,8 @@ exports[`<Home/> > should render succesfully 1`] = `
         class="css-1etnvhi"
       />
       <p
-        class="chakra-text css-1kyjpe6"
-        style="transform: translateY(-10px) translateZ(0);"
+        class="chakra-text css-wj0v3a"
+        style="transform: translateX(-50%) translateY(-10px) translateZ(0);"
       >
         Scroll
         <svg

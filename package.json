@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "docker": "docker build -t star-wars-planet-mgmt . && docker run -p 80:80 -it star-wars-planet-mgmt"
+    "docker": "yarn build && docker build -t star-wars-planet-mgmt . && docker run -p 80:80 -it star-wars-planet-mgmt"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
