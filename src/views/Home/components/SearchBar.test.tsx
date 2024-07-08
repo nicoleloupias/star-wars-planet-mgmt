@@ -2,7 +2,7 @@ import { beforeAll, describe, expect, test, vi } from "vitest";
 import { render } from "../../../test-utils";
 import { SearchBar } from "./SearchBar";
 import { useForm } from "react-hook-form";
-import { FormFieldValues } from "../Home";
+import type { FormFieldValues } from "../Home";
 import { usePlanetsStore } from "../../../hooks/usePlanetsStore";
 import { fireEvent, waitFor } from "@testing-library/dom";
 import { act } from "@testing-library/react";

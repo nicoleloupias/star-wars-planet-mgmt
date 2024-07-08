@@ -1,16 +1,4 @@
-import {
-  Box,
-  Button,
-  Center,
-  Circle,
-  Flex,
-  Heading,
-  ListItem,
-  OrderedList,
-  Text,
-  UnorderedList,
-  useToast
-} from "@chakra-ui/react";
+import { Box, Button, Center, Circle, Flex, Heading, ListItem, Text, UnorderedList, useToast } from "@chakra-ui/react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { usePlanetsStore } from "../../../hooks/usePlanetsStore";
 import stars from "../../../assets/stars.png";

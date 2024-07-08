@@ -2,7 +2,7 @@ import { Select } from "@chakra-ui/react";
 import { useEffect } from "react";
 import type { UseFormReturn } from "react-hook-form";
 import type { Planet } from "../../../hooks/usePlanetsStore";
-import { FormFieldValues } from "../Home";
+import type { FormFieldValues } from "../Home";
 
 export interface SortByProps {
   planetsToShow: Planet[] | undefined;

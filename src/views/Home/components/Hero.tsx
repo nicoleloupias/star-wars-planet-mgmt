@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Img, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import darth from "../../../assets/darth.png";
 import { ArrowDownIcon } from "@chakra-ui/icons";
 

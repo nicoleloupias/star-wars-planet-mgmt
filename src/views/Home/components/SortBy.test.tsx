@@ -1,9 +1,9 @@
-import { beforeAll, describe, expect, test, vi } from "vitest";
+import { describe, expect, test, vi } from "vitest";
 import { render } from "../../../test-utils";
 import { SortBy } from "./SortBy";
 import { useForm } from "react-hook-form";
-import { FormFieldValues } from "../Home";
-import { fireEvent, waitFor } from "@testing-library/dom";
+import type { FormFieldValues } from "../Home";
+import { fireEvent } from "@testing-library/dom";
 import { act } from "@testing-library/react";
 
 describe("<SortBy/>", () => {

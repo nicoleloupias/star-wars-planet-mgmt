@@ -4,7 +4,7 @@ import { CloseIcon, SearchIcon } from "@chakra-ui/icons";
 import type { Planet } from "../../../hooks/usePlanetsStore";
 import { usePlanetsStore } from "../../../hooks/usePlanetsStore";
 import type { UseFormReturn } from "react-hook-form";
-import { FormFieldValues } from "../Home";
+import type { FormFieldValues } from "../Home";
 
 export interface SearchBarProps {
   setPlanetsToShow: React.Dispatch<React.SetStateAction<Planet[] | undefined>>;
