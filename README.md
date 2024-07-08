@@ -1,10 +1,12 @@
 # Planet Management System
+![ezgif-1-d0b4288954](https://github.com/nicoleloupias/star-wars-planet-mgmt/assets/57961143/5745254f-b654-468d-88a9-bdca51e11ee2)
+
 
 ## Table of Contents
 
 - [About](#about)
 - [Features](#features)
-- [Setup and Usage](#getting-started)
+- [Setup and Usage](#setup-and-usage)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Running the Project](#running-the-project)
@@ -31,7 +33,7 @@ The Planet Management System is a React application developed using Vite and Typ
 
 Make sure you have the following installed on your system:
 
-- [Node.js](https://nodejs.org/en/) (>= 14.x)
+- [Node.js](https://nodejs.org/en/) (>= 16.x)
 - [npm](https://www.npmjs.com/) (>= 6.x) or [yarn](https://yarnpkg.com/)
 
 ### Installation
@@ -53,14 +55,18 @@ Make sure you have the following installed on your system:
 
 ### Running the project
 
-To start the development server, run the following commands:
+To start the development server, first copy the `.env.demo` file
+
+```sh
+  cp .env.demo .env
+```
+
+Then run the following command:
 
 ```sh
   npm run dev
-  cp .env.demo .env
   # or
   yarn dev
-  cp .env.demo .env
 ```
 
 This will start the application at `http://localhost:5173`
