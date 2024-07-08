@@ -10,6 +10,7 @@
   - [Running the Project](#running-the-project)
 - [Testing](#testing)
 - [Docker](#docker)
+- [Future improvements](#future-improvements)
 
 ## About
 
@@ -93,3 +94,17 @@ yarn docker
 ```
 
 You should see the application running in [http://localhost:80](http://localhost:80)
+
+## Future Improvements
+
+- Add i18n for translations.
+- Improve services error handling.
+- MSW handlers with mocks from outside file, split handlers for each service.
+- Server side pagination.
+- Remove initial getAll from App (This was added to make it easier for this initial version)
+- Implement getById in PlanetService (This wasn't added to make this initial version simpler)
+- Use of Suspense and skeletons.
+- Implement sorting descending.
+- Router paths in constants.
+- Add more testing to hooks, router, services and utils.
+- Get endpoint urls from constant instead of raw strings.
