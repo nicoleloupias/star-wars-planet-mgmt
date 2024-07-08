@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import type { RawPlanet } from "../services/types/Planet";
-import { getPlanetId } from "../helpers/planet";
+import { getPlanetId } from "../utils/planet";
 
 export interface Planet extends RawPlanet {
   id: string;
@@ -27,7 +27,7 @@ export const usePlanetsStore = create<PlanetStore>((set) => ({
   },
   addPlanet: (planet) => {
     return set((state) => {
-      return { ...state, planets: [...(state?.planets || []), planet] };
+      return { ...state, planets: [planet, ...(state?.planets || [])] };
     });
   },
   editPlanet: (id, data) => {

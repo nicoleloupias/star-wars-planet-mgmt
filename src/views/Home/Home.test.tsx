@@ -2,6 +2,7 @@ import { beforeAll, describe, expect, test } from "vitest";
 import { Home } from "./Home";
 import { render } from "../../test-utils";
 import { usePlanetsStore } from "../../hooks/usePlanetsStore";
+import { act, fireEvent, waitFor } from "@testing-library/react";
 
 describe("<Home/>", () => {
   beforeAll(() => {
@@ -58,5 +59,18 @@ describe("<Home/>", () => {
     const component = render(<Home />);
 
     expect(component.getAllByTestId("planet-card").length).toBe(2);
+  });
+
+  test("should render 'there are no results' if planetsToShow is 0", async () => {
+    const component = render(<Home />);
+
+    act(() => {
+      fireEvent.change(component.getByTestId("search"), { target: { value: "asdf" } });
+      fireEvent.click(component.getByRole("button", { name: "Search" }));
+    });
+
+    await waitFor(() => {
+      expect(component.getByText("There are no results with this search")).toBeInTheDocument();
+    });
   });
 });

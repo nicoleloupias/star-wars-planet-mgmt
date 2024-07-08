@@ -11,7 +11,7 @@ exports[`<App/> > should render succesfully 1`] = `
         class="css-0"
       >
         <nav
-          class="css-lhoiow"
+          class="css-m25t9"
         >
           <a
             aria-current="page"
@@ -45,6 +45,16 @@ exports[`<App/> > should render succesfully 1`] = `
             class="chakra-text css-1is01ss"
           >
             Scroll
+            <svg
+              class="chakra-icon css-1j5r502"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                fill="currentColor"
+              />
+            </svg>
           </p>
           <img
             class="chakra-image css-odqkwc"
@@ -58,10 +68,10 @@ exports[`<App/> > should render succesfully 1`] = `
             class="css-1bb2txy"
           >
             <form
-              class="css-jh8cql"
+              class="css-1654nw7"
             >
               <div
-                class="css-1moedo"
+                class="css-nu2kwa"
               >
                 <div
                   class="chakra-form-control css-1kxonj9"
@@ -108,7 +118,7 @@ exports[`<App/> > should render succesfully 1`] = `
                 </div>
               </div>
               <div
-                class="chakra-select__wrapper css-vuj45d"
+                class="chakra-select__wrapper css-awd3x6"
               >
                 <select
                   class="chakra-select css-szixr"
@@ -165,7 +175,7 @@ exports[`<App/> > should render succesfully 1`] = `
               </div>
             </form>
             <div
-              class="css-1apmbyb"
+              class="css-16138za"
             />
           </section>
         </div>
@@ -227,7 +237,7 @@ exports[`<App/> > should render succesfully 1`] = `
       class="css-0"
     >
       <nav
-        class="css-lhoiow"
+        class="css-m25t9"
       >
         <a
           aria-current="page"
@@ -261,6 +271,16 @@ exports[`<App/> > should render succesfully 1`] = `
           class="chakra-text css-1is01ss"
         >
           Scroll
+          <svg
+            class="chakra-icon css-1j5r502"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              fill="currentColor"
+            />
+          </svg>
         </p>
         <img
           class="chakra-image css-odqkwc"
@@ -274,10 +294,10 @@ exports[`<App/> > should render succesfully 1`] = `
           class="css-1bb2txy"
         >
           <form
-            class="css-jh8cql"
+            class="css-1654nw7"
           >
             <div
-              class="css-1moedo"
+              class="css-nu2kwa"
             >
               <div
                 class="chakra-form-control css-1kxonj9"
@@ -324,7 +344,7 @@ exports[`<App/> > should render succesfully 1`] = `
               </div>
             </div>
             <div
-              class="chakra-select__wrapper css-vuj45d"
+              class="chakra-select__wrapper css-awd3x6"
             >
               <select
                 class="chakra-select css-szixr"
@@ -381,7 +401,7 @@ exports[`<App/> > should render succesfully 1`] = `
             </div>
           </form>
           <div
-            class="css-1apmbyb"
+            class="css-16138za"
           />
         </section>
       </div>

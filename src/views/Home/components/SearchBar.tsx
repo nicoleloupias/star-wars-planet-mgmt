@@ -4,13 +4,11 @@ import { CloseIcon, SearchIcon } from "@chakra-ui/icons";
 import type { Planet } from "../../../hooks/usePlanetsStore";
 import { usePlanetsStore } from "../../../hooks/usePlanetsStore";
 import type { UseFormReturn } from "react-hook-form";
+import { FormFieldValues } from "../Home";
 
 export interface SearchBarProps {
   setPlanetsToShow: React.Dispatch<React.SetStateAction<Planet[] | undefined>>;
-  form: UseFormReturn<{
-    search: string;
-    sortBy: "name" | "diameter" | "climate" | "terrain" | "population";
-  }>;
+  form: UseFormReturn<FormFieldValues>;
 }
 
 export const SearchBar = ({ form, setPlanetsToShow }: SearchBarProps) => {
@@ -22,10 +20,12 @@ export const SearchBar = ({ form, setPlanetsToShow }: SearchBarProps) => {
     const result = planets?.filter((planet) => {
       if (!searchValue) return planet;
 
+      const search = searchValue.toLowerCase();
+
       return (
-        planet.name.toLowerCase().includes(searchValue) ||
-        planet.climate.toLowerCase().includes(searchValue) ||
-        planet.terrain.toLowerCase().includes(searchValue)
+        planet.name.toLowerCase().includes(search) ||
+        planet.climate.toLowerCase().includes(search) ||
+        planet.terrain.toLowerCase().includes(search)
       );
     });
 
@@ -37,7 +37,7 @@ export const SearchBar = ({ form, setPlanetsToShow }: SearchBarProps) => {
     setPlanetsToShow([...(planets ?? [])]);
   };
   return (
-    <Box maxW={80}>
+    <Box maxW={{ lg: 60 }} w="full">
       <InputController
         id="search"
         showLabel={false}

@@ -1,5 +1,6 @@
 import { Box, Flex, Heading, Img, Text } from "@chakra-ui/react";
 import darth from "../../../assets/Darth-Vader-PNG-HD-Image.png";
+import { ArrowDownIcon } from "@chakra-ui/icons";
 
 export const Hero = () => {
   return (
@@ -19,6 +20,7 @@ export const Hero = () => {
 
       <Text zIndex={1} pos="absolute" bottom={20} left={52}>
         Scroll
+        <ArrowDownIcon ml={2} />
       </Text>
       <Img src={darth} width={{ base: "full", lg: "70%" }} pos="absolute" bottom={-20} right={15} />
     </Flex>

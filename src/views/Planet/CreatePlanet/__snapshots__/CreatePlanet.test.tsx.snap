@@ -19,7 +19,7 @@ exports[`<CreatePlanet/> > should render succesfully 1`] = `
             Create planet
           </h2>
           <form
-            class="chakra-stack css-g6wlko"
+            class="chakra-stack css-1grfql"
           >
             <div
               class="chakra-form-control css-1kxonj9"
@@ -248,7 +248,7 @@ exports[`<CreatePlanet/> > should render succesfully 1`] = `
           Create planet
         </h2>
         <form
-          class="chakra-stack css-g6wlko"
+          class="chakra-stack css-1grfql"
         >
           <div
             class="chakra-form-control css-1kxonj9"

@@ -25,11 +25,11 @@ exports[`<PlanetCard/> > should render succesfully 1`] = `
           class="css-upfzb1"
         >
           <div
-            class="planet css-1mm42zb"
+            class="planet css-6tuw8o"
           />
         </div>
         <div
-          class="cardDetails css-vk61ae"
+          class="cardDetails css-1weapz6"
         >
           <h2
             class="chakra-heading css-q8veze"
@@ -41,7 +41,12 @@ exports[`<PlanetCard/> > should render succesfully 1`] = `
           >
             Diameter: 
             12900
-            km
+             
+            <span
+              class="css-1nvf5u9"
+            >
+              km
+            </span>
           </p>
           <p
             class="chakra-text css-0"
@@ -134,11 +139,11 @@ exports[`<PlanetCard/> > should render succesfully 1`] = `
         class="css-upfzb1"
       >
         <div
-          class="planet css-1mm42zb"
+          class="planet css-6tuw8o"
         />
       </div>
       <div
-        class="cardDetails css-vk61ae"
+        class="cardDetails css-1weapz6"
       >
         <h2
           class="chakra-heading css-q8veze"
@@ -150,7 +155,12 @@ exports[`<PlanetCard/> > should render succesfully 1`] = `
         >
           Diameter: 
           12900
-          km
+           
+          <span
+            class="css-1nvf5u9"
+          >
+            km
+          </span>
         </p>
         <p
           class="chakra-text css-0"

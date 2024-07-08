@@ -1,7 +1,7 @@
 import { Button, Flex, Stack } from "@chakra-ui/react";
 import { InputController } from "../../components/InputController";
 import { useFormContext } from "react-hook-form";
-import { maxLength, required } from "../../helpers/validations";
+import { maxLength, required } from "../../utils/validations";
 import { useNavigate } from "react-router-dom";
 
 export interface PlanetFormFieldValues {
@@ -22,7 +22,7 @@ export const PlanetForm = ({ onSubmit, confirmText }: PlanetFormProps) => {
   const navigate = useNavigate();
 
   return (
-    <Stack as="form" w="full" spacing={5}>
+    <Stack as="form" w="full" spacing={5} pb={6}>
       <InputController
         id="name"
         control={control}

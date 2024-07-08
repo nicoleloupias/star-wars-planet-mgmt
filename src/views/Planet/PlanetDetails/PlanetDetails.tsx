@@ -3,7 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { usePlanetsStore } from "../../../hooks/usePlanetsStore";
 import stars from "../../../assets/stars.png";
 import { useEffect } from "react";
-import { getRandomPlanetColor } from "../../../helpers/planet";
+import { getRandomPlanetColor } from "../../../utils/planet";
 import { DeleteIcon, EditIcon } from "@chakra-ui/icons";
 import { ResidentService } from "../../../services/ResidentService";
 import { useResidentsStore } from "../../../hooks/useResidentsStore";
@@ -66,8 +66,15 @@ export const PlanetDetails = () => {
         <Box bgColor="red.500" p={6} mb={6}>
           <Heading color="gray.50">Planet: {data?.name}</Heading>
         </Box>
-        <Box ml={6}>
-          <Text>Diameter: {data?.diameter}km</Text>
+        <Box ml={6} textTransform="capitalize">
+          <Text>
+            Diameter: {data?.diameter}{" "}
+            {data?.diameter !== "unknown" && (
+              <Box as="span" textTransform="lowercase">
+                km
+              </Box>
+            )}
+          </Text>
           <Text>Climate: {data?.climate}</Text>
           <Text>Terrain: {data?.terrain}</Text>
           <Text>Population: {data?.population}</Text>
@@ -78,7 +85,13 @@ export const PlanetDetails = () => {
             </Heading>
 
             {residents?.length > 0 ? (
-              <OrderedList>{residents?.map(({ name }, i) => <ListItem key={i}>{name}</ListItem>)}</OrderedList>
+              <OrderedList>
+                {residents?.map(({ name, gender }, i) => (
+                  <ListItem key={i}>
+                    {name} - {gender}
+                  </ListItem>
+                ))}
+              </OrderedList>
             ) : (
               <Text>There are no residents in this planet.</Text>
             )}

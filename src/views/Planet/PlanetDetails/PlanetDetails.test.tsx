@@ -89,7 +89,7 @@ describe("<PlanetDetails />", () => {
     const component = factoryComponent();
 
     await waitFor(() => {
-      expect(component.getByText("Poggle the Lesser")).toBeInTheDocument();
+      expect(component.getByText("Poggle the Lesser - male")).toBeInTheDocument();
     });
   });
 

@@ -9,8 +9,6 @@ describe("<App/>", () => {
     expect(component).toMatchSnapshot();
   });
 
-  //TODO: fix
-
   // test.only("should get all planets", async () => {
   //   usePlanetsStore.setState((state) => ({ ...state, planets: undefined }));
   //   expect(usePlanetsStore.getState().planets).toBe(undefined);

@@ -25,6 +25,16 @@ exports[`<Home/> > should render succesfully 1`] = `
           class="chakra-text css-1is01ss"
         >
           Scroll
+          <svg
+            class="chakra-icon css-1j5r502"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              fill="currentColor"
+            />
+          </svg>
         </p>
         <img
           class="chakra-image css-odqkwc"
@@ -38,10 +48,10 @@ exports[`<Home/> > should render succesfully 1`] = `
           class="css-1bb2txy"
         >
           <form
-            class="css-jh8cql"
+            class="css-1654nw7"
           >
             <div
-              class="css-1moedo"
+              class="css-nu2kwa"
             >
               <div
                 class="chakra-form-control css-1kxonj9"
@@ -88,7 +98,7 @@ exports[`<Home/> > should render succesfully 1`] = `
               </div>
             </div>
             <div
-              class="chakra-select__wrapper css-vuj45d"
+              class="chakra-select__wrapper css-awd3x6"
             >
               <select
                 class="chakra-select css-szixr"
@@ -145,7 +155,7 @@ exports[`<Home/> > should render succesfully 1`] = `
             </div>
           </form>
           <div
-            class="css-1apmbyb"
+            class="css-16138za"
           >
             <a
               class="chakra-card css-1olgpje"
@@ -165,11 +175,11 @@ exports[`<Home/> > should render succesfully 1`] = `
                 class="css-upfzb1"
               >
                 <div
-                  class="planet css-17ii5le"
+                  class="planet css-5a7chc"
                 />
               </div>
               <div
-                class="cardDetails css-vk61ae"
+                class="cardDetails css-1weapz6"
               >
                 <h2
                   class="chakra-heading css-q8veze"
@@ -181,7 +191,12 @@ exports[`<Home/> > should render succesfully 1`] = `
                 >
                   Diameter: 
                   11370
-                  km
+                   
+                  <span
+                    class="css-1nvf5u9"
+                  >
+                    km
+                  </span>
                 </p>
                 <p
                   class="chakra-text css-0"
@@ -221,11 +236,11 @@ exports[`<Home/> > should render succesfully 1`] = `
                 class="css-upfzb1"
               >
                 <div
-                  class="planet css-1mm42zb"
+                  class="planet css-6tuw8o"
                 />
               </div>
               <div
-                class="cardDetails css-vk61ae"
+                class="cardDetails css-1weapz6"
               >
                 <h2
                   class="chakra-heading css-q8veze"
@@ -237,7 +252,12 @@ exports[`<Home/> > should render succesfully 1`] = `
                 >
                   Diameter: 
                   12900
-                  km
+                   
+                  <span
+                    class="css-1nvf5u9"
+                  >
+                    km
+                  </span>
                 </p>
                 <p
                   class="chakra-text css-0"
@@ -333,6 +353,16 @@ exports[`<Home/> > should render succesfully 1`] = `
         class="chakra-text css-1is01ss"
       >
         Scroll
+        <svg
+          class="chakra-icon css-1j5r502"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+            fill="currentColor"
+          />
+        </svg>
       </p>
       <img
         class="chakra-image css-odqkwc"
@@ -346,10 +376,10 @@ exports[`<Home/> > should render succesfully 1`] = `
         class="css-1bb2txy"
       >
         <form
-          class="css-jh8cql"
+          class="css-1654nw7"
         >
           <div
-            class="css-1moedo"
+            class="css-nu2kwa"
           >
             <div
               class="chakra-form-control css-1kxonj9"
@@ -396,7 +426,7 @@ exports[`<Home/> > should render succesfully 1`] = `
             </div>
           </div>
           <div
-            class="chakra-select__wrapper css-vuj45d"
+            class="chakra-select__wrapper css-awd3x6"
           >
             <select
               class="chakra-select css-szixr"
@@ -453,7 +483,7 @@ exports[`<Home/> > should render succesfully 1`] = `
           </div>
         </form>
         <div
-          class="css-1apmbyb"
+          class="css-16138za"
         >
           <a
             class="chakra-card css-1olgpje"
@@ -473,11 +503,11 @@ exports[`<Home/> > should render succesfully 1`] = `
               class="css-upfzb1"
             >
               <div
-                class="planet css-17ii5le"
+                class="planet css-5a7chc"
               />
             </div>
             <div
-              class="cardDetails css-vk61ae"
+              class="cardDetails css-1weapz6"
             >
               <h2
                 class="chakra-heading css-q8veze"
@@ -489,7 +519,12 @@ exports[`<Home/> > should render succesfully 1`] = `
               >
                 Diameter: 
                 11370
-                km
+                 
+                <span
+                  class="css-1nvf5u9"
+                >
+                  km
+                </span>
               </p>
               <p
                 class="chakra-text css-0"
@@ -529,11 +564,11 @@ exports[`<Home/> > should render succesfully 1`] = `
               class="css-upfzb1"
             >
               <div
-                class="planet css-1mm42zb"
+                class="planet css-6tuw8o"
               />
             </div>
             <div
-              class="cardDetails css-vk61ae"
+              class="cardDetails css-1weapz6"
             >
               <h2
                 class="chakra-heading css-q8veze"
@@ -545,7 +580,12 @@ exports[`<Home/> > should render succesfully 1`] = `
               >
                 Diameter: 
                 12900
-                km
+                 
+                <span
+                  class="css-1nvf5u9"
+                >
+                  km
+                </span>
               </p>
               <p
                 class="chakra-text css-0"

@@ -8,7 +8,7 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
   >
     <div>
       <form
-        class="chakra-stack css-g6wlko"
+        class="chakra-stack css-1grfql"
       >
         <div
           class="chakra-form-control css-1kxonj9"
@@ -224,7 +224,7 @@ exports[`<PlanetForm/> > should render succesfully 1`] = `
   </body>,
   "container": <div>
     <form
-      class="chakra-stack css-g6wlko"
+      class="chakra-stack css-1grfql"
     >
       <div
         class="chakra-form-control css-1kxonj9"

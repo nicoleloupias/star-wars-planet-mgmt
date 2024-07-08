@@ -2,13 +2,23 @@ import type { FlexProps } from "@chakra-ui/react";
 import { Box, Card, Center, Circle, Heading, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import stars from "../../../assets/stars.png";
-import { getRandomPlanetColor } from "../../../helpers/planet";
+import { getRandomPlanetColor } from "../../../utils/planet";
 import type { Planet } from "../../../hooks/usePlanetsStore";
 
 export interface PlanetCardProps extends Omit<FlexProps, "id">, Planet {}
 
 export const PlanetCard = ({ id, name, diameter, climate, terrain, population, ...props }: PlanetCardProps) => {
   const planetColor = getRandomPlanetColor(name);
+
+  const getCircleSize = () => {
+    if (diameter === "unknown" || !parseInt(diameter)) return "160px";
+    const maxDiameter = 200;
+    const minDiameter = 40;
+    const scaledDiameter = (parseInt(diameter) / 10000) * maxDiameter;
+    const adjustedDiameter = Math.max(Math.min(scaledDiameter, maxDiameter), minDiameter);
+
+    return `${adjustedDiameter}px`;
+  };
 
   return (
     <Card
@@ -37,7 +47,7 @@ export const PlanetCard = ({ id, name, diameter, climate, terrain, population, .
         <Circle
           className="planet"
           mx="auto"
-          size={40}
+          size={getCircleSize()}
           bgColor={planetColor}
           boxShadow={`0px 0px 30px 0px ${planetColor}`}
           transition="0.5s ease-out all"
@@ -54,9 +64,17 @@ export const PlanetCard = ({ id, name, diameter, climate, terrain, population, .
         bottom={0}
         w="full"
         className="cardDetails"
+        textTransform="capitalize"
       >
         <Heading color="gray.50">{name}</Heading>
-        <Text>Diameter: {diameter}km</Text>
+        <Text>
+          Diameter: {diameter}{" "}
+          {diameter !== "unknown" && (
+            <Box as="span" textTransform="lowercase">
+              km
+            </Box>
+          )}
+        </Text>
         <Text>Climate: {climate}</Text>
         <Text>Terrain: {terrain}</Text>
         <Text>Population: {population}</Text>

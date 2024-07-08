@@ -25,6 +25,16 @@ exports[`<Hero/> > should render succesfully 1`] = `
           class="chakra-text css-1is01ss"
         >
           Scroll
+          <svg
+            class="chakra-icon css-1j5r502"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              fill="currentColor"
+            />
+          </svg>
         </p>
         <img
           class="chakra-image css-odqkwc"
@@ -102,6 +112,16 @@ exports[`<Hero/> > should render succesfully 1`] = `
         class="chakra-text css-1is01ss"
       >
         Scroll
+        <svg
+          class="chakra-icon css-1j5r502"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+            fill="currentColor"
+          />
+        </svg>
       </p>
       <img
         class="chakra-image css-odqkwc"

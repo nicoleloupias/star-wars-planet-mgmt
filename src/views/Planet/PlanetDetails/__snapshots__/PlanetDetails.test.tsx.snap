@@ -31,14 +31,19 @@ exports[`<PlanetDetails /> > should render succesfully 1`] = `
             </h2>
           </div>
           <div
-            class="css-1wmrhmx"
+            class="css-17n3uhj"
           >
             <p
               class="chakra-text css-0"
             >
               Diameter: 
               11370
-              km
+               
+              <span
+                class="css-1nvf5u9"
+              >
+                km
+              </span>
             </p>
             <p
               class="chakra-text css-0"
@@ -211,14 +216,19 @@ exports[`<PlanetDetails /> > should render succesfully 1`] = `
           </h2>
         </div>
         <div
-          class="css-1wmrhmx"
+          class="css-17n3uhj"
         >
           <p
             class="chakra-text css-0"
           >
             Diameter: 
             11370
-            km
+             
+            <span
+              class="css-1nvf5u9"
+            >
+              km
+            </span>
           </p>
           <p
             class="chakra-text css-0"

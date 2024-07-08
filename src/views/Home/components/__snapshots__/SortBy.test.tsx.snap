@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<MainLayout/> > should render succesfully 1`] = `
+exports[`<SortBy/> > should render succesfully 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body
@@ -8,30 +8,60 @@ exports[`<MainLayout/> > should render succesfully 1`] = `
   >
     <div>
       <div
-        class="css-0"
+        class="chakra-select__wrapper css-awd3x6"
       >
-        <nav
-          class="css-m25t9"
+        <select
+          class="chakra-select css-szixr"
+          name="sortBy"
         >
-          <a
-            aria-current="page"
-            class="chakra-link css-spn4bz active"
-            href="/"
+          <option
+            value=""
           >
-            Home
-          </a>
-          <a
-            class="chakra-link css-spn4bz"
-            href="/create"
+            Order by
+          </option>
+          <option
+            value="name"
           >
-            Create
-          </a>
-        </nav>
-        <p
-          class="chakra-text css-0"
+            Name
+          </option>
+          <option
+            value="diameter"
+          >
+            Diameter
+          </option>
+          <option
+            value="climate"
+          >
+            Climate
+          </option>
+          <option
+            value="terrain"
+          >
+            Terrain
+          </option>
+          <option
+            value="population"
+          >
+            Population
+          </option>
+        </select>
+        <div
+          class="chakra-select__icon-wrapper css-iohxn1"
         >
-          hello!
-        </p>
+          <svg
+            aria-hidden="true"
+            class="chakra-select__icon"
+            focusable="false"
+            role="presentation"
+            style="width: 1em; height: 1em; color: currentColor;"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
       </div>
       <span
         hidden=""
@@ -87,30 +117,60 @@ exports[`<MainLayout/> > should render succesfully 1`] = `
   </body>,
   "container": <div>
     <div
-      class="css-0"
+      class="chakra-select__wrapper css-awd3x6"
     >
-      <nav
-        class="css-m25t9"
+      <select
+        class="chakra-select css-szixr"
+        name="sortBy"
       >
-        <a
-          aria-current="page"
-          class="chakra-link css-spn4bz active"
-          href="/"
+        <option
+          value=""
         >
-          Home
-        </a>
-        <a
-          class="chakra-link css-spn4bz"
-          href="/create"
+          Order by
+        </option>
+        <option
+          value="name"
         >
-          Create
-        </a>
-      </nav>
-      <p
-        class="chakra-text css-0"
+          Name
+        </option>
+        <option
+          value="diameter"
+        >
+          Diameter
+        </option>
+        <option
+          value="climate"
+        >
+          Climate
+        </option>
+        <option
+          value="terrain"
+        >
+          Terrain
+        </option>
+        <option
+          value="population"
+        >
+          Population
+        </option>
+      </select>
+      <div
+        class="chakra-select__icon-wrapper css-iohxn1"
       >
-        hello!
-      </p>
+        <svg
+          aria-hidden="true"
+          class="chakra-select__icon"
+          focusable="false"
+          role="presentation"
+          style="width: 1em; height: 1em; color: currentColor;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
     </div>
     <span
       hidden=""
